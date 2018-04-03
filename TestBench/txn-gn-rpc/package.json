@@ -1,0 +1,19 @@
+{
+  "name": "app_txn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aion-web3": "0.0.3",
+    "bignumber.js": "^6.0.0",
+    "bn.js": "^4.11.8",
+    "minimist": "^1.2.0",
+    "node-random-number": "^0.1.1"
+  }
+}

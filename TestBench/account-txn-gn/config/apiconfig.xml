@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><javaapi>
+    <!--*** LOG ***-->
+    <log>
+        <module label="BSE">INFO</module>
+        <module label="CHN">INFO</module>
+        <module label="CNT">INFO</module>
+        <module label="NET">INFO</module>
+        <module label="TRX">INFO</module>
+        <module label="WLT">INFO</module>
+        <module label="EXE">INFO</module>
+        <module label="ADM">INFO</module>
+        <module label="SOL">INFO</module>
+    </log>
+</javaapi>

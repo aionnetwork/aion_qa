@@ -258,7 +258,7 @@ describe('b) multiowned contract', () => {
   }).timeout(0)
 
   // 5) accept a confirmation --> record owner and operation hash
-  // 6) revoke --> revert remaining gas to the _to address when an
+  // 6) revoke --> revert remaining gas to the _to address when an operation is revoked
 });
 
 /* Daylimit Contract Test Suite
@@ -313,7 +313,7 @@ describe('c) multiowned contract', () => {
           console.log('error', err);
         else {
           console.log('[log] resetSpentToday() tx hash:', res);
-          tx = res; 
+          tx = res;
 
 
           // loop & check public variable m_dailyLimit
