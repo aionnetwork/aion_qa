@@ -100,24 +100,6 @@ describe('a) contract compile', () => {
   methods to test: addOwner(), removeOwner(), changeOwner(), changeRequirement(), hasConfirmed(),  revoke(), multiowned()
 */
 describe('b) multiowned contract', () => {
-  // 5) check if acc3 is owner
-  // it('acc3 should not be an owner'), (done) => {
-  //   let check = multiownedInstance.isOwner(a3, {
-  //       from: a0,
-  //       data: code,
-  //       gas: 3000000,
-  //       gasPrice: 1
-  //     },
-  //   (err, res) => {
-  //     if (err)
-  //     console.log('error', err);
-  //     else {
-  //       console.log('[log]', res);
-  //     }
-  //   })
-  //   check()
-  //   done();
-  // }
 
   // 1) adding new owner (acc3), to wallet
   it('add new owner', (done) => {
@@ -284,7 +266,7 @@ describe('b) multiowned contract', () => {
   2) resetSpentToday() --> resets amount spent today
 */
 describe('c) multiowned contract', () => {
-  // 1) setting daily limit from 5000000000000000000 to 2949109293494949494
+  // 1) setting daily limit from 5000000000000000000 to 9949109293494949494
   it('set daily limit', (done) => {
     let new_dailyLimit = 9949109293494949494;
     let current_dailyLimit = contractInstance.m_dailyLimit().toNumber();;
@@ -331,7 +313,7 @@ describe('c) multiowned contract', () => {
           console.log('error', err);
         else {
           console.log('[log] resetSpentToday() tx hash:', res);
-          tx = res; // find a way to match tx for action to happen?
+          tx = res; 
 
 
           // loop & check public variable m_dailyLimit
