@@ -1,0 +1,20 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "description": "unit test cases for web3",
+  "main": "eth_accounts_test.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bignumber.js": "^6.0.0",
+    "chai": "^4.1.2",
+    "commander": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "find ./tests -name '*_test.js' | xargs mocha -R spec"
+  },
+  "author": "",
+  "license": "ISC"
+}
