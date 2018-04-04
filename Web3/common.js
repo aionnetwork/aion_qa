@@ -8,9 +8,9 @@ global.web3 = new Web3(new Web3.providers.HttpProvider(this.provider));
 /**
  * main account for sending transactions
  */
-module.exports.mainAccount = web3.eth.accounts[0];//web3.eth.coinbase;
+module.exports.mainAccount = web3.personal.listAccounts[0];//web3.eth.coinbase;
 module.exports.mainAccountPass = ''; //change to match account info
-module.exports.secondaryAccounts = web3.eth.accounts.filter(acc => acc !== this.mainAccount);
+module.exports.secondaryAccounts = web3.personal.listAccounts.filter(acc => acc !== this.mainAccount);
 
 module.exports.sleepTime = 10000;
 module.exports.contractAddress = '';
