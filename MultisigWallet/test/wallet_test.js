@@ -2,7 +2,7 @@
 
 // How to run: mocha wallet_test.js
 const fs = require('fs');
-global.Web3 = require('../../../aion_web3'); // directory where Web3 is stored, adjust accordingly
+global.Web3 = require('../../../../aion_web3'); // directory where Web3 is stored, adjust accordingly
 const web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
 const expect = require("chai").expect;
 
@@ -48,7 +48,7 @@ let events;
 let contractInstance;
 let tx, abi, code;
 let operation;
-let acc = web3.eth.accounts;
+let acc = web3.personal.listAccounts;
 // main wallet owners will be a0, a1, a2, a3
 // a4 will be used to execute transactions to
 let a0 = acc[0], a1 = acc[1], a2 = acc[2], a3 = acc[3], a4=acc[4]
