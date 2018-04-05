@@ -12,7 +12,7 @@ let size = 3;
 //number of blocks to be mined before checking for tx receipt and balance
 let blockWaitCount = 6;
 
-let accounts = web3.eth.accounts;
+let accounts = web3.personal.listAccounts;
 //minimum of four accounts on kernel, transfer to three accounts
 if (accounts.length < 4) {
     console.log('minimum of 4 accounts required for sending multiple transactions');

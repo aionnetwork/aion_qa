@@ -1,0 +1,14 @@
+{
+  "name": "contractStoragetestweb3",
+  "version": "1.0.0",
+  "description": "test for storing data in a smaart contract and testing the limits",
+  "main": "storeData.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+  }
+}

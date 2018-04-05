@@ -1,0 +1,14 @@
+{
+  "name": "minertest",
+  "version": "1.0.0",
+  "description": "tests for miner account",
+  "main": "miner_reward_test.js",
+  "scripts": {
+    "test": "node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bignumber.js": "^6.0.0"
+  }
+}

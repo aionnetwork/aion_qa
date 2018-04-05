@@ -1,0 +1,13 @@
+{
+  "name": "accountcreationweb3",
+  "version": "1.0.0",
+  "description": "Create accounts by sending transactions to a smart contract",
+  "main": "accountCreation.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
