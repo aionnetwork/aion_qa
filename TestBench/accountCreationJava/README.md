@@ -4,7 +4,7 @@ This repository contains the script for creating accounts by sending transaction
 
 ## System Requirements
 
-* **NodeJS** > 8
+* **Java** v8 or above
 
 ## Test Requirements
 
