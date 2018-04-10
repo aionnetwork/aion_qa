@@ -12,7 +12,7 @@ This repository contains the script for sending continuous transactions and moni
 
 ## Running Test
 
-This test requires the following 5 parameters as input.
+This test requires the following 7 parameters as input.
 
 ```
  [0] account address to be used for sending transactions.
