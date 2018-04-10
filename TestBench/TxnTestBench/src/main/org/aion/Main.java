@@ -20,7 +20,7 @@ public class Main {
      * [0] account for sending transactions
      * [1] password of sender
      * [2] receiver account
-     * [3] number of txns to send before stopping
+     * [3] total number of txns to send before stopping
      * [4] sleep time between transactions in ms
      * [5] max queue size
      * [6] url to connect to
@@ -34,17 +34,18 @@ public class Main {
     private static int interval;
     private static int queueMax;
     private static boolean isActive;
+    private static String pw;
 
 
     public static void main(String[] args) throws InterruptedException {
 
         cb = Address.wrap(args[0]);
-        String pw = args[1];
+        pw = args[1];
         cb2 = Address.wrap(args[2]);
         totalTxs = Integer.parseInt(args[3]);
         interval = Integer.parseInt(args[4]);
         queueMax = Integer.parseInt(args[5]);
-        if (args[6] != null)
+        if (args.length == 7)
             url = args[6];
 
         isActive = true;
@@ -66,6 +67,24 @@ public class Main {
         AtomicInteger count = new AtomicInteger(0);
         BlockingDeque<byte[]> queue = new LinkedBlockingDeque<>();
 
+        Thread t2 = new Thread(() -> {
+            while (true) {
+                try {
+                    Thread.sleep(86400);
+                    if (api.getWallet().unlockAccount(cb, pw, 86400).getObject().equals(Boolean.valueOf(false))) {
+                        System.out.println("Unlock failed.");
+                        System.exit(0);
+                    } else {
+                        System.out.println("Unlocked.");
+                    }
+
+                } catch (InterruptedException e) {
+                    break;
+                }
+            }
+
+        });
+
         Thread t = new Thread(() -> {
             while (true) {
                 try {
@@ -81,7 +100,7 @@ public class Main {
                         byte[] msgHash = queue.take();
 
                         ApiMsg apiMsg = api.getTx().getMsgStatus(ByteArrayWrapper.wrap(msgHash));
-                        if(((MsgRsp) apiMsg.getObject()).getStatus() == 54){
+                        if (((MsgRsp) apiMsg.getObject()).getStatus() == 54) {
                             System.out.println("restarting.");
                             tearDown();
                             Thread.sleep(5000);
@@ -89,8 +108,7 @@ public class Main {
                             api.connect(url);
                             queue.clear();
                             break;
-                        }
-                        else if (IUtils.endTxStatus(((MsgRsp) apiMsg.getObject()).getStatus())) {
+                        } else if (IUtils.endTxStatus(((MsgRsp) apiMsg.getObject()).getStatus())) {
                             count.incrementAndGet();
                         } else {
                             queue.put(msgHash);
@@ -104,6 +122,7 @@ public class Main {
         });
 
         t.start();
+        t2.start();
 
         while (true) {
             try {
