@@ -22,3 +22,5 @@ This test requires the following 6 parameters as input.
  [4] sleep time between sending transactions in ms.
  [5] maximum size of the queue holding transactions while they haven't been included in a block. When transactions are included in a block, they will be removed from the queue, opening space for new transactions.
 ```
+**Note**
+the _native_ folder should be placed in the same directory as the jar file to run the test.
