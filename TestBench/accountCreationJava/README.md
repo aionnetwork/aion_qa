@@ -12,13 +12,13 @@ This repository contains the script for creating accounts by sending transaction
 
 ## Running Test
 
-This test requires the following 5 parameters as input.
+This test requires the following 6 parameters as input.
 
 ```
  [0] account address to be used for sending transactions.
  [1] password for unlocking the sender account.
- [2] the 19 ending digits of the last created account. 0 if starting from scratch.
- [3] number of accounts to create.
- [4] sleep time between transactions in ms.
- [5] maximum size of the queue holding transactions while they haven't been included in a block.
+ [2] the 19 ending digits of the last created account, if continuing from the last created account. 0 if starting from scratch.
+ [3] total number of accounts to create.
+ [4] sleep time between sending transactions in ms.
+ [5] maximum size of the queue holding transactions while they haven't been included in a block. When transactions are included in a block, they will be removed from the queue, opening space for new transactions.
 ```

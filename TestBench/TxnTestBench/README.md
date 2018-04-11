@@ -19,7 +19,7 @@ This test requires the following 7 parameters as input.
  [1] password for unlocking the sender account.
  [2] account address who receives transactions.
  [3] total number of transactions to send before stopping.
- [4] sleep time between transactions in ms.
- [5] maximum size of the queue holding transactions while they haven't been included in a block.
+ [4] sleep time between sending transactions in ms.
+ [5] maximum size of the queue holding transactions while they haven't been included in a block. When transactions are included in a block, they will be removed from the queue, opening space for new transactions.
  [6] (optional) url for the api.
 ```

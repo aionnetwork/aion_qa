@@ -25,7 +25,7 @@ public class AccountGeneratorThread {
     private static BufferedWriter output;
     private static BlockingQueue<Address> accountQueue;
     private static int iteration = 0;
-    private static BigInteger amountToTransfer = BigInteger.valueOf(10L);
+    private static BigInteger amountToTransfer = BigInteger.valueOf(1000000L);
     private static List<Address> accountList;
 
     public static List<Address> run(IAionAPI api_in, ApiMsg apiMsg_in, Address accountFrom, int accountCount, File accountFile, String password)
@@ -66,7 +66,7 @@ public class AccountGeneratorThread {
         Thread transferThread = new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(800);
                     int i =0;
                     while (i < accountQueue.size()) {
                         Address receiverAddress = accountQueue.take();

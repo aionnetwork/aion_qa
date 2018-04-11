@@ -25,7 +25,7 @@ public class TransactionSenderThread {
         AtomicInteger count = new AtomicInteger(0);
         AtomicInteger dropped = new AtomicInteger(0);
         BlockingQueue<byte[]> queue = new LinkedBlockingQueue<>();
-        String head_addr = "0x000000000000000000000000000000000000000000000";
+        String head_addr = "0xa00000000000000000000000000000000000000000000";
         Address newAccount = Address.wrap(head_addr + tail_addr.toString());
         Thread t = new Thread(() -> {
             while (true) {
