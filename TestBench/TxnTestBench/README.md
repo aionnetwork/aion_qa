@@ -1,6 +1,6 @@
 # Continuous Transaction Test
 
-This repository contains the script for sending continuous transactions and monitoring the throughput. It sends transactions from one account to another with a value of 1.
+This repository contains the script for sending continuous transactions and monitoring the throughput. It sends transactions from one account to another with a value of 1. It will display the number of transactions processed and dropped.
 
 ## System Requirements
 

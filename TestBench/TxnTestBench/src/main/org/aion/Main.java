@@ -65,12 +65,13 @@ public class Main {
     private static int run() throws InterruptedException {
         long startTime = System.currentTimeMillis();
         AtomicInteger count = new AtomicInteger(0);
+        AtomicInteger dropped = new AtomicInteger(0);
         BlockingDeque<byte[]> queue = new LinkedBlockingDeque<>();
 
         Thread t2 = new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(86400);
+                    Thread.sleep(86400000);
                     if (api.getWallet().unlockAccount(cb, pw, 86400).getObject().equals(Boolean.valueOf(false))) {
                         System.out.println("Unlock failed.");
                         System.exit(0);
@@ -92,9 +93,8 @@ public class Main {
                     int qSize = queue.size();
                     long duration = (System.currentTimeMillis() - startTime) / 1000;
                     if (duration != 0)
-                        System.out.println("proccessed tx: " + count + ", queue size: " + qSize
+                        System.out.println("proccessed tx: " + count + ", queue size: " + qSize + ", dropped: " + dropped
                                 + ", throughput (tx/sec): " + count.get() / duration);
-
 
                     for (int i = 0; i < qSize; i++) {
                         byte[] msgHash = queue.take();
@@ -102,14 +102,18 @@ public class Main {
                         ApiMsg apiMsg = api.getTx().getMsgStatus(ByteArrayWrapper.wrap(msgHash));
                         if (((MsgRsp) apiMsg.getObject()).getStatus() == 54) {
                             System.out.println("restarting.");
+                            isActive = false;
                             tearDown();
                             Thread.sleep(5000);
                             api = IAionAPI.init();
                             api.connect(url);
                             queue.clear();
+                            isActive = true;
                             break;
-                        } else if (IUtils.endTxStatus(((MsgRsp) apiMsg.getObject()).getStatus())) {
+                        } else if (((MsgRsp) apiMsg.getObject()).getStatus() == 105) {
                             count.incrementAndGet();
+                        } else if (((MsgRsp) apiMsg.getObject()).getStatus() == 102 || ((MsgRsp) apiMsg.getObject()).getStatus() <= 2) {
+                            dropped.incrementAndGet();
                         } else {
                             queue.put(msgHash);
                         }
