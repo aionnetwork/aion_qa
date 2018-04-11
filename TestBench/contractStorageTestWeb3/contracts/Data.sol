@@ -2,14 +2,14 @@ pragma solidity ^0.4.10;
 
 contract Data {
 
-    mapping(uint => address) countMap;
-    mapping(uint => Data) dataMap;
-    mapping(uint => Data) dataMap2;
-    mapping(uint => Data) dataMap3;
-    uint[] countArray;
-    Data[] dataArray;
-    Data[] dataArray2;
-    Data[] dataArray3;
+    mapping(uint => address) public countMap;
+    mapping(uint => Data) public dataMap;
+    mapping(uint => Data) public dataMap2;
+    mapping(uint => Data) public dataMap3;
+    uint[] public countArray;
+    Data[] public dataArray;
+    Data[] public dataArray2;
+    Data[] public dataArray3;
 
     struct Data {
         uint id;
