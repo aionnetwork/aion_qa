@@ -114,7 +114,7 @@ module.exports.compile = function(source){
 module.exports.deploy = ({name, abi, binary}, address) => {
   const options = {
     from: address,
-    gas: 9000000,
+    gas: 900000,
     gasPrice: 1,
     data: binary,
   };
