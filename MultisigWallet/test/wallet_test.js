@@ -53,7 +53,7 @@ let acc = web3.personal.listAccounts;
 // a4 will be used to execute transactions to
 let a0 = acc[0], a1 = acc[1], a2 = acc[2], a3 = acc[3], a4=acc[4]
 // password for accounts a0-a3
-let pw = 'PLAT4life';
+let pw = 'AccountPasswordsGoesHere';
 
 describe('a) contract compile', () => {
   it('contract compile', (done) => {
