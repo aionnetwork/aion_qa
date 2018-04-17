@@ -1,1 +1,0 @@
-[{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"bytes32"},{"indexed":false,"name":"value","type":"uint128"}],"name":"ControllerBurn","type":"event"}]

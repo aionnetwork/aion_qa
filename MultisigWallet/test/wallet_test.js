@@ -6,7 +6,7 @@ global.Web3 = require('../../../../aion_web3'); // directory where Web3 is store
 const web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
 const expect = require("chai").expect;
 
-const unlock = require('./contracts/unlock.js')
+const unlock = require('./contracts/unlock.js');
 const compile = require('./contracts/compile.js');
 const deploy = require('./contracts/deploy.js');
 
@@ -74,7 +74,7 @@ describe('a) contract compile', () => {
     deploy(web3, a0, a1, a2, pw, abi, code)
         .then((res) => {
             contractAddr = res.address;
-            contractInstance = web3.eth.contract(abi).at(contractAddr);
+            contractInstance = web3.eth.describe(abi).at(contractAddr);
 
             console.log('[log] contract address:', res.address);
             done();
