@@ -23,7 +23,8 @@ public class Main {
      * [3] total number of txns to send before stopping
      * [4] sleep time between transactions in ms
      * [5] max queue size
-     * [6] url to connect to
+     * [6] timeout for api
+     * [7] url to connect to
      */
 
 
@@ -33,6 +34,7 @@ public class Main {
     private static int totalTxs;
     private static int interval;
     private static int queueMax;
+    private static int timeout;
     private static boolean isActive;
     private static String pw;
 
@@ -45,12 +47,13 @@ public class Main {
         totalTxs = Integer.parseInt(args[3]);
         interval = Integer.parseInt(args[4]);
         queueMax = Integer.parseInt(args[5]);
-        if (args.length == 7)
-            url = args[6];
+        timeout = Integer.parseInt(args[6]);
+        if (args.length == 8)
+            url = args[7];
 
         isActive = true;
         api = IAionAPI.init();
-        api.connect(url);
+        api.connect(url, false, timeout);
 
         if (api.getWallet().unlockAccount(cb, pw, 86400).getObject().equals(Boolean.valueOf(false))) {
             System.out.println("Unlock failed.");

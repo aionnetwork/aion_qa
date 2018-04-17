@@ -121,6 +121,7 @@ public class AccountGeneratorThread {
             accountQueue.put(((List<Key>) apiMsg.getObject()).get(0).getPubKey());
             output.write(((List<Key>) apiMsg.getObject()).get(0).getPubKey().toString());
             output.newLine();
+            output.flush();
         }
     }
 
