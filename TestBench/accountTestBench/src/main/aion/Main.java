@@ -37,10 +37,10 @@ public class Main {
             if (file.exists() && file.isFile()) {
                 readFile(fileName);
                 if (accountList.size() != accountCount) {
-                    accountList.addAll(AccountGeneratorThread.run(api, apiMsg, accountFrom, (accountCount - accountList.size()), file, password));
+                    accountList.addAll(AccountGeneratorThread.run(api, apiMsg, accountFrom, (accountCount - accountList.size()), file, password, interval));
                 }
             } else {
-                accountList = AccountGeneratorThread.run(api, apiMsg, accountFrom, accountCount, file, password);
+                accountList = AccountGeneratorThread.run(api, apiMsg, accountFrom, accountCount, file, password, interval);
             }
         } catch (Exception e) {
             e.printStackTrace();

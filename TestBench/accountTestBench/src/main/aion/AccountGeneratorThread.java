@@ -28,7 +28,7 @@ public class AccountGeneratorThread {
     private static BigInteger amountToTransfer = BigInteger.valueOf(1000000L);
     private static List<Address> accountList;
 
-    public static List<Address> run(IAionAPI api_in, ApiMsg apiMsg_in, Address accountFrom, int accountCount, File accountFile, String password)
+    public static List<Address> run(IAionAPI api_in, ApiMsg apiMsg_in, Address accountFrom, int accountCount, File accountFile, String password, int interval)
             throws InterruptedException {
 
         accountQueue = new LinkedBlockingDeque<>();
@@ -73,7 +73,7 @@ public class AccountGeneratorThread {
         Thread transferThread = new Thread(() -> {
             while (true) {
                 try {
-                    Thread.sleep(800);
+                    Thread.sleep(interval);
                     int i = 0;
                     while (i < accountQueue.size()) {
                         Address receiverAddress = accountQueue.take();
