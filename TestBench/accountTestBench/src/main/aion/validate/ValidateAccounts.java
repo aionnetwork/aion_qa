@@ -18,8 +18,8 @@ public class ValidateAccounts {
     private static List<Address> accountList = new ArrayList<>();
     private static IAionAPI api;
     private static Address accountFrom;
-    private static int minBalance;
-    private static int transferValue;
+    private static long minBalance;
+    private static long expectedBalance;
     private static BlockingDeque<byte[]> queue = new LinkedBlockingDeque<>();
     private static boolean isActive = true;
     private static String url = IAionAPI.LOCALHOST_URL;
@@ -31,9 +31,8 @@ public class ValidateAccounts {
         accountFrom = Address.wrap(args[0]);
         String password = args[1];
 
-        minBalance = Integer.parseInt(args[2]);
-        transferValue = Integer.parseInt(args[3]);
-        interval = Integer.parseInt(args[4]);
+        expectedBalance =  Long.parseLong(args[2]);
+        interval = Integer.parseInt(args[3]);
 
         api = IAionAPI.init();
         ApiMsg apiMsg = api.connect(url);
@@ -57,6 +56,7 @@ public class ValidateAccounts {
                     System.out.println("[Log] Validating transfers ..");
                     validateTransfers();
                     System.out.println("[Log] Transfer validation complete.");
+                    System.exit(0);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -93,9 +93,10 @@ public class ValidateAccounts {
     }
 
     private static void validateAccounts() throws InterruptedException {
-        for (int i = 0; i < accountList.size() - 1; i++) {
+        for (int i = 0; i < accountList.size(); i++) {
             BigInteger bal = api.getChain().getBalance(accountList.get(i)).getObject();
-            if (bal.compareTo(BigInteger.valueOf(minBalance)) <= 0) {
+            if (bal.compareTo(BigInteger.valueOf(expectedBalance)) <= 0) {
+                BigInteger diff = BigInteger.valueOf(expectedBalance).subtract(bal);
                 Address accountTo = accountList.get(i);
                 TxArgs.TxArgsBuilder builder = new TxArgs.TxArgsBuilder()
                         .data(ByteArrayWrapper.wrap("TestSendTransaction!".getBytes()))
@@ -103,7 +104,7 @@ public class ValidateAccounts {
                         .to(accountTo)
                         .nrgLimit(23000)
                         .nrgPrice(1)
-                        .value(BigInteger.valueOf(transferValue))
+                        .value(diff)
                         .nonce(BigInteger.ZERO);
 
                 api.getTx().fastTxbuild(builder.createTxArgs());
