@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="984" version="1.1" width="2328" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#ffffff" height="172" stroke="#ffffff" stroke-width="1" width="237" x="854" y="198"/>
+<rect fill="none" height="172" stroke="#000000" stroke-width="1" width="237" x="854" y="198"/>
+<text font-family="Dialog" font-size="12" x="951" y="247">
+Owned</text>
+<text font-family="Dialog" font-size="12" x="925" y="212">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="936" y="229">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="237" x="854" y="257"/>
+<text font-family="Dialog" font-size="12" x="858" y="271">
+owner : address</text>
+<text font-family="Dialog" font-size="12" x="858" y="287">
+newOwner : address</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="237" x="854" y="297"/>
+<text font-family="Dialog" font-size="12" x="858" y="311">
+&lt;&lt;constructor&gt;&gt; Owned()</text>
+<text font-family="Dialog" font-size="12" x="858" y="327">
+&lt;&lt;modifier&gt;&gt; onlyOwner()</text>
+<text font-family="Dialog" font-size="12" x="858" y="343">
+changeOwner(_newOwner : address)</text>
+<text font-family="Dialog" font-size="12" x="858" y="359">
+acceptOwnership()</text>
+<rect fill="#ffffff" height="137" stroke="#ffffff" stroke-width="1" width="161" x="902" y="14"/>
+<rect fill="none" height="137" stroke="#000000" stroke-width="1" width="161" x="902" y="14"/>
+<text font-family="Dialog" font-size="12" x="953" y="63">
+SafeMath</text>
+<text font-family="Dialog" font-size="12" x="935" y="28">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="946" y="45">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="902" y="73"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="161" x="902" y="94"/>
+<text font-family="Dialog" font-size="12" x="906" y="108">
+safeMul(a : uint,b : uint)</text>
+<text font-family="Dialog" font-size="12" x="906" y="124">
+safeSub(a : uint,b : uint)</text>
+<text font-family="Dialog" font-size="12" x="906" y="140">
+safeAdd(a : uint,b : uint)</text>
+<rect fill="#ffffff" height="156" stroke="#ffffff" stroke-width="1" width="180" x="2134" y="222"/>
+<rect fill="none" height="156" stroke="#000000" stroke-width="1" width="180" x="2134" y="222"/>
+<text font-family="Dialog" font-size="12" x="2195" y="271">
+Pausable</text>
+<text font-family="Dialog" font-size="12" x="2177" y="236">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="2188" y="253">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="180" x="2134" y="281"/>
+<text font-family="Dialog" font-size="12" x="2138" y="295">
+paused : bool</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="180" x="2134" y="305"/>
+<text font-family="Dialog" font-size="12" x="2138" y="319">
+pause()</text>
+<text font-family="Dialog" font-size="12" x="2138" y="335">
+unpause()</text>
+<text font-family="Dialog" font-size="12" x="2138" y="351">
+&lt;&lt;modifier&gt;&gt; notPaused()</text>
+<text font-family="Dialog" font-size="12" x="2138" y="367">
+newOperation()</text>
+<polyline fill="none" points="2134,278 1090,278" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1090,278 1102,271 1102,285" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1090,278 1102,271 1102,285" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="124" stroke="#ffffff" stroke-width="1" width="186" x="582" y="246"/>
+<rect fill="none" height="124" stroke="#000000" stroke-width="1" width="186" x="582" y="246"/>
+<text font-family="Dialog" font-size="12" x="643" y="295">
+Finalizable</text>
+<text font-family="Dialog" font-size="12" x="628" y="260">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="639" y="277">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="186" x="582" y="305"/>
+<text font-family="Dialog" font-size="12" x="586" y="319">
+finalized : bool</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="186" x="582" y="329"/>
+<text font-family="Dialog" font-size="12" x="586" y="343">
+finalize()</text>
+<text font-family="Dialog" font-size="12" x="586" y="359">
+&lt;&lt;modifier&gt;&gt; notFinalized()</text>
+<polyline fill="none" points="767,262 854,262" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="854,262 842,269 842,255" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="854,262 842,269 842,255" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="117" stroke="#ffffff" stroke-width="1" width="268" x="1518" y="30"/>
+<rect fill="none" height="117" stroke="#000000" stroke-width="1" width="268" x="1518" y="30"/>
+<text font-family="Dialog" font-size="12" x="1631" y="96">
+IToken</text>
+<text font-family="Dialog" font-size="12" x="1604" y="44">
+&lt;&lt;interface&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1605" y="61">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1616" y="78">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="268" x="1518" y="106"/>
+<text font-family="Dialog" font-size="12" x="1522" y="120">
+transfer(_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="1522" y="136">
+balanceOf(_owner : address) : uint</text>
+<rect fill="#ffffff" height="105" stroke="#ffffff" stroke-width="1" width="325" x="1174" y="46"/>
+<rect fill="none" height="105" stroke="#000000" stroke-width="1" width="325" x="1174" y="46"/>
+<text font-family="Dialog" font-size="12" x="1284" y="95">
+TokenReceivable</text>
+<text font-family="Dialog" font-size="12" x="1289" y="60">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1300" y="77">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="325" x="1174" y="105"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="325" x="1174" y="126"/>
+<text font-family="Dialog" font-size="12" x="1178" y="140">
+claimTokens(_token : address,_to : address) : bool</text>
+<polyline fill="none" points="1174,150 1090,198" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1090,198 1096,185 1103,198" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1090,198 1096,185 1103,198" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="117" stroke="#ffffff" stroke-width="1" width="444" x="1630" y="158"/>
+<rect fill="none" height="117" stroke="#000000" stroke-width="1" width="444" x="1630" y="158"/>
+<text font-family="Dialog" font-size="12" x="1801" y="224">
+EventDefinitions</text>
+<text font-family="Dialog" font-size="12" x="1804" y="172">
+&lt;&lt;interface&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1805" y="189">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1816" y="206">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="444" x="1630" y="234"/>
+<text font-family="Dialog" font-size="12" x="1634" y="248">
+&lt;&lt;event&gt;&gt; Transfer(from : address,to : address,value : uint)</text>
+<text font-family="Dialog" font-size="12" x="1634" y="264">
+&lt;&lt;event&gt;&gt; Approval(owner : address,spender : address,value : uint)</text>
+<rect fill="#ffffff" height="540" stroke="#ffffff" stroke-width="1" width="659" x="1430" y="350"/>
+<rect fill="none" height="540" stroke="#000000" stroke-width="1" width="659" x="1430" y="350"/>
+<text font-family="Dialog" font-size="12" x="1740" y="399">
+Token</text>
+<text font-family="Dialog" font-size="12" x="1712" y="364">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="1723" y="381">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="659" x="1430" y="409"/>
+<text font-family="Dialog" font-size="12" x="1434" y="423">
+NAME : string</text>
+<text font-family="Dialog" font-size="12" x="1434" y="439">
+DECIMAL : Integer</text>
+<text font-family="Dialog" font-size="12" x="1434" y="455">
+SYMBOL : string</text>
+<text font-family="Dialog" font-size="12" x="1434" y="471">
+motd : string</text>
+<text font-family="Dialog" font-size="12" x="1434" y="487">
+controller : Controller</text>
+<text font-family="Dialog" font-size="12" x="1434" y="503">
+&lt;&lt;new&gt;&gt; burnAddress : address</text>
+<text font-family="Dialog" font-size="12" x="1434" y="519">
+&lt;&lt;new&gt;&gt; burnable : bool</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="659" x="1430" y="529"/>
+<text font-family="Dialog" font-size="12" x="1434" y="543">
+&lt;&lt;event&gt;&gt; Motd(message : string)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="559">
+setMotd(_m : string)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="575">
+setController(_c : address)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="591">
+&lt;&lt;const&gt;&gt; balanceOf(a : address) : uint</text>
+<text font-family="Dialog" font-size="12" x="1434" y="607">
+&lt;&lt;const&gt;&gt; totalSupply() : uint</text>
+<text font-family="Dialog" font-size="12" x="1434" y="623">
+&lt;&lt;const&gt;&gt; allowance(_owner : address,_spender : address) : uint</text>
+<text font-family="Dialog" font-size="12" x="1434" y="639">
+&lt;&lt;onlyPayloadSize, notPaused&gt;&gt; transfer(_to : address,_value : address) : bool</text>
+<text font-family="Dialog" font-size="12" x="1434" y="655">
+&lt;&lt;onlyPayloadSize, notPaused&gt;&gt; transferFrom(_from : address,_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="1434" y="671">
+&lt;&lt;onlyPayloadSize, notPaused&gt;&gt; approve(_spender : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="1434" y="687">
+&lt;&lt;onlyPayloadSize, notPaused&gt;&gt; increaseApproval(_spender : address,_addedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="1434" y="703">
+&lt;&lt;onlyPayloadSize, notPaused&gt;&gt; decreaseApproval(_spender : address,_subtractedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="1434" y="719">
+&lt;&lt;modifier&gt;&gt; onlyPayloadSize(numwords : uint)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="735">
+&lt;&lt;notPaused&gt;&gt; burn(_amount : uint)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="751">
+&lt;&lt;modifier&gt;&gt; onlyController()</text>
+<text font-family="Dialog" font-size="12" x="1434" y="767">
+&lt;&lt;onlyController&gt;&gt; controllerTransfer(_from : address,_to : address,_value : uint)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="783">
+&lt;&lt;onlyController&gt;&gt; controllerApprove(_owner : address,_spender : address,_value : uint)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="799">
+&lt;&lt;new, onlyController&gt;&gt; controllerBurn(_from : address,_to : address,_value : uint)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="815">
+&lt;&lt;new, onlyController&gt;&gt; setBurnAddress(_address : address)</text>
+<text font-family="Dialog" font-size="12" x="1434" y="831">
+&lt;&lt;new, onlyController&gt;&gt; enableBurning()</text>
+<text font-family="Dialog" font-size="12" x="1434" y="847">
+&lt;&lt;new, onlyController&gt;&gt; disableBurning()</text>
+<text font-family="Dialog" font-size="12" x="1434" y="863">
+&lt;&lt;new, modifier&gt;&gt; burnEnabled()</text>
+<text font-family="Dialog" font-size="12" x="1434" y="879">
+&lt;&lt;new, notPaused, burnEnabled&gt;&gt; burn(_to : bytes32,_amount : uint)</text>
+<polyline fill="none" points="1430,350 1090,350" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1090,350 1102,343 1102,357" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1090,350 1102,343 1102,357" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="350" y2="345"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="340" y2="335"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="330" y2="325"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="320" y2="315"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="310" y2="305"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="300" y2="295"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="290" y2="285"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="280" y2="275"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="270" y2="265"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="260" y2="255"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="250" y2="245"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="240" y2="235"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="230" y2="225"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="220" y2="215"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="210" y2="205"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="200" y2="195"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="190" y2="185"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="180" y2="175"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="170" y2="165"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="160" y2="155"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1598" x2="1598" y1="150" y2="146"/>
+<polygon fill="#ffffff" points="1598,146 1605,158 1591,158" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1598,146 1605,158 1591,158" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="1511" y="260">
+&lt;&lt;realize&gt;&gt;</text>
+<polyline fill="none" points="1430,350 1062,150" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1062,150 1075,149 1069,161" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1062,150 1075,149 1069,161" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="350" y2="345"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="340" y2="335"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="330" y2="325"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="320" y2="315"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="310" y2="305"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="300" y2="295"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="290" y2="285"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1942" x2="1942" y1="280" y2="275"/>
+<polygon fill="#ffffff" points="1942,274 1949,286 1935,286" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1942,274 1949,286 1935,286" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="1855" y="324">
+&lt;&lt;realize&gt;&gt;</text>
+<polyline fill="none" points="1430,350 1430,150" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="1430,150 1437,162 1423,162" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="1430,150 1437,162 1423,162" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="395" stroke="#ffffff" stroke-width="1" width="659" x="734" y="438"/>
+<rect fill="none" height="395" stroke="#000000" stroke-width="1" width="659" x="734" y="438"/>
+<text font-family="Dialog" font-size="12" x="1033" y="470">
+Controller</text>
+<text font-family="Dialog" font-size="12" x="1016" y="452">
+&lt;&lt;Contract&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="659" x="734" y="480"/>
+<text font-family="Dialog" font-size="12" x="738" y="494">
+ledger : Ledger</text>
+<text font-family="Dialog" font-size="12" x="738" y="510">
+token : Token</text>
+<text font-family="Dialog" font-size="12" x="738" y="526">
+&lt;&lt;new&gt;&gt; burnAddress : address</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="659" x="734" y="536"/>
+<text font-family="Dialog" font-size="12" x="738" y="550">
+&lt;&lt;onlyOwner&gt;&gt; setToken(_token : address)</text>
+<text font-family="Dialog" font-size="12" x="738" y="566">
+&lt;&lt;onlyOwner&gt;&gt; setLedger(_ledger : address)</text>
+<text font-family="Dialog" font-size="12" x="738" y="582">
+&lt;&lt;modifier&gt;&gt; onlyToken()</text>
+<text font-family="Dialog" font-size="12" x="738" y="598">
+&lt;&lt;modifier&gt;&gt; onlyLedger()</text>
+<text font-family="Dialog" font-size="12" x="738" y="614">
+&lt;&lt;const&gt;&gt; totalSupply() : uint</text>
+<text font-family="Dialog" font-size="12" x="738" y="630">
+&lt;&lt;const&gt;&gt; balanceOf(_a : address) : uint</text>
+<text font-family="Dialog" font-size="12" x="738" y="646">
+&lt;&lt;const&gt;&gt; allowance(_owner : address,_spender : address) : uint</text>
+<text font-family="Dialog" font-size="12" x="738" y="662">
+&lt;&lt;onlyLedger&gt;&gt; ledgerTransafer(from : address,to : address,val : uint)</text>
+<text font-family="Dialog" font-size="12" x="738" y="678">
+&lt;&lt;onlyToken&gt;&gt; transfer(_from : address,_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="738" y="694">
+&lt;&lt;onlyToken&gt;&gt; transferFrom(_spender : address,_from : address,_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="738" y="710">
+&lt;&lt;onlyToken&gt;&gt; approve(_owner : address,_spender : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="738" y="726">
+&lt;&lt;onlyToken&gt;&gt; increaseApproval(_owner : address,_spender : address,_addedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="738" y="742">
+&lt;&lt;onlyToken&gt;&gt; decreaseApproval(_owner : address,_spender : address,_subtractedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="738" y="758">
+&lt;&lt;onlyToken&gt;&gt; burn(_owner : address,_amount : uint)</text>
+<text font-family="Dialog" font-size="12" x="738" y="774">
+&lt;&lt;new, onlyOwner&gt;&gt; setBurnAddress(_address : address)</text>
+<text font-family="Dialog" font-size="12" x="738" y="790">
+&lt;&lt;new, onlyOwner&gt;&gt; enableBurning()</text>
+<text font-family="Dialog" font-size="12" x="738" y="806">
+&lt;&lt;new, onlyOwner&gt;&gt; disableBurning()</text>
+<text font-family="Dialog" font-size="12" x="738" y="822">
+&lt;&lt;new, onlyToken&gt;&gt; burn(_from : address,_to : bytes32,_amount : uint) : bool</text>
+<polyline fill="none" points="1430,654 1392,654" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1404" x2="1392" y1="647" y2="654"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1404" x2="1392" y1="661" y2="654"/>
+<polyline fill="none" points="1392,654 1430,654" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1418" x2="1430" y1="661" y2="654"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="1418" x2="1430" y1="647" y2="654"/>
+<polyline fill="none" points="854,438 854,369" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="854,369 861,381 847,381" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="854,369 861,381 847,381" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="734,438 734,369" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="734,369 741,381 727,381" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="734,369 741,381 727,381" stroke="#000000" stroke-width="1"/>
+<polyline fill="none" points="2088,350 2134,350" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="2134,350 2122,357 2122,343" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="2134,350 2122,357 2122,343" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="524" stroke="#ffffff" stroke-width="1" width="682" x="14" y="446"/>
+<rect fill="none" height="524" stroke="#000000" stroke-width="1" width="682" x="14" y="446"/>
+<text font-family="Dialog" font-size="12" x="333" y="495">
+Ledger</text>
+<text font-family="Dialog" font-size="12" x="308" y="460">
+&lt;&lt;Contract&gt;&gt;</text>
+<text font-family="Dialog" font-size="12" x="319" y="477">
+&lt;&lt;Fixed&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="682" x="14" y="505"/>
+<text font-family="Dialog" font-size="12" x="18" y="519">
+controller : Controller</text>
+<text font-family="Dialog" font-size="12" x="18" y="535">
+balanceOf : mapping&lt;address&gt;&lt;uint&gt;</text>
+<text font-family="Dialog" font-size="12" x="18" y="551">
+allowance : mapping&lt;address&gt;&lt;mapping&gt;</text>
+<text font-family="Dialog" font-size="12" x="18" y="567">
+totalSupply : uint</text>
+<text font-family="Dialog" font-size="12" x="18" y="583">
+mintingNonce : uint</text>
+<text font-family="Dialog" font-size="12" x="18" y="599">
+mintingStopped : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="615">
+&lt;&lt;new&gt;&gt; proofs : mapping&lt;uint256&gt;&lt;bytes32&gt;</text>
+<text font-family="Dialog" font-size="12" x="18" y="631">
+&lt;&lt;new&gt;&gt; locked : mapping&lt;address&gt;&lt;uint256&gt;</text>
+<text font-family="Dialog" font-size="12" x="18" y="647">
+&lt;&lt;new&gt;&gt; metadata : mapping&lt;bytes32&gt;&lt;bytes32&gt;</text>
+<text font-family="Dialog" font-size="12" x="18" y="663">
+&lt;&lt;new&gt;&gt; burnAddress : address</text>
+<text font-family="Dialog" font-size="12" x="18" y="679">
+&lt;&lt;new&gt;&gt; bridgeNodes : mapping&lt;address&gt;&lt;bool&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="682" x="14" y="689"/>
+<text font-family="Dialog" font-size="12" x="18" y="703">
+&lt;&lt;constructor&gt;&gt; Ledger()</text>
+<text font-family="Dialog" font-size="12" x="18" y="719">
+&lt;&lt;onlyOwner, notFinalized&gt;&gt; setController(_controller : address)</text>
+<text font-family="Dialog" font-size="12" x="18" y="735">
+&lt;&lt;onlyOwner&gt;&gt; stopMinting()</text>
+<text font-family="Dialog" font-size="12" x="18" y="751">
+&lt;&lt;onlyOwner&gt;&gt; multiMint(nonce : uint,bits : uint256[])</text>
+<text font-family="Dialog" font-size="12" x="18" y="767">
+&lt;&lt;modifier&gt;&gt; onlyController()</text>
+<text font-family="Dialog" font-size="12" x="18" y="783">
+&lt;&lt;onlyController&gt;&gt; transfer(_from : address,_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="799">
+&lt;&lt;onlyController&gt;&gt; transferFrom(_spender : address,_from : address,_to : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="815">
+&lt;&lt;onlyController&gt;&gt; approve(_owner : address,_spender : address,_value : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="831">
+&lt;&lt;onlyController&gt;&gt; increaseApproval(_owner : address,_spender : address,_addedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="847">
+&lt;&lt;onlyController&gt;&gt; decreaseApproval(_owner : address,_spender : address,_addedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="863">
+&lt;&lt;onlyController&gt;&gt; decreaseApproval(_owner : address,_spender : address,_subtractedValue : uint) : bool</text>
+<text font-family="Dialog" font-size="12" x="18" y="879">
+&lt;&lt;onlyController&gt;&gt; burn(_owner : address,_amount : uint)</text>
+<text font-family="Dialog" font-size="12" x="18" y="895">
+&lt;&lt;new, onlyController&gt;&gt; setProof(_key : uint256,_proof : bytes32)</text>
+<text font-family="Dialog" font-size="12" x="18" y="911">
+&lt;&lt;new, onlyController&gt;&gt; setLocked(_key : address,_value : uint256)</text>
+<text font-family="Dialog" font-size="12" x="18" y="927">
+&lt;&lt;new, onlyController&gt;&gt; setMetadata(_key : bytes32,_value : bytes32)</text>
+<text font-family="Dialog" font-size="12" x="18" y="943">
+&lt;&lt;new, onlyController&gt;&gt; setBurnAddress(_address : address)</text>
+<text font-family="Dialog" font-size="12" x="18" y="959">
+&lt;&lt;new, onlyController&gt;&gt; setBridgeNode(_address : address,enabled : bool)</text>
+<polyline fill="none" points="695,510 734,510" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="722" x2="734" y1="517" y2="510"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="722" x2="734" y1="503" y2="510"/>
+<polyline fill="none" points="734,534 695,534" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="707" x2="695" y1="527" y2="534"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="707" x2="695" y1="541" y2="534"/>
+<polyline fill="none" points="695,446 902,150" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="902,150 900,163 889,155" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="902,150 900,163 889,155" stroke="#000000" stroke-width="1"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="446" y2="441"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="436" y2="431"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="426" y2="421"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="416" y2="411"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="406" y2="401"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="396" y2="391"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="386" y2="381"/>
+<line fill="#000000" stroke="#000000" stroke-width="1" x1="582" x2="582" y1="376" y2="371"/>
+<polygon fill="#ffffff" points="582,369 589,381 575,381" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="582,369 589,381 575,381" stroke="#000000" stroke-width="1"/>
+<text font-family="Dialog" font-size="12" x="495" y="420">
+&lt;&lt;realize&gt;&gt;</text>
+<polyline fill="none" points="695,446 854,369" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="854,369 846,380 840,367" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="854,369 846,380 840,367" stroke="#000000" stroke-width="1"/>
+<rect fill="#ffffff" height="91" stroke="#ffffff" stroke-width="1" width="431" x="398" y="126"/>
+<rect fill="none" height="91" stroke="#000000" stroke-width="1" width="431" x="398" y="126"/>
+<text font-family="Dialog" font-size="12" x="532" y="158">
+ControllerEventDefinitions</text>
+<text font-family="Dialog" font-size="12" x="566" y="140">
+&lt;&lt;Contract&gt;&gt;</text>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="431" x="398" y="168"/>
+<rect fill="#000000" height="1" stroke="#000000" stroke-width="1" width="431" x="398" y="190"/>
+<text font-family="Dialog" font-size="12" x="402" y="204">
+&lt;&lt;event&gt;&gt; ControllerBurn(from : address,to : address,value : uint)</text>
+<polyline fill="none" points="828,438 828,216" stroke="#000000" stroke-width="1"/>
+<polygon fill="#ffffff" points="828,216 835,228 821,228" stroke="#ffffff" stroke-width="1"/>
+<polygon fill="none" points="828,216 835,228 821,228" stroke="#000000" stroke-width="1"/>
+</svg>
