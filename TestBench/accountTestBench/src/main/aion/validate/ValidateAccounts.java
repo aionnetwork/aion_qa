@@ -95,7 +95,7 @@ public class ValidateAccounts {
     private static void validateAccounts() throws InterruptedException {
         for (int i = 0; i < accountList.size(); i++) {
             BigInteger bal = api.getChain().getBalance(accountList.get(i)).getObject();
-            if (bal.compareTo(BigInteger.valueOf(expectedBalance)) <= 0) {
+            if (bal.compareTo(BigInteger.valueOf(expectedBalance)) < 0) {
                 BigInteger diff = BigInteger.valueOf(expectedBalance).subtract(bal);
                 Address accountTo = accountList.get(i);
                 TxArgs.TxArgsBuilder builder = new TxArgs.TxArgsBuilder()
