@@ -4,7 +4,7 @@ const web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:8545"));
 module.exports = function(w3, acc0, acc1, acc2, pass, abi, code){
   return new Promise((resolve, reject)=>{
     // deploying contract
-    w3.eth.contract(abi).new(
+    w3.eth.describe(abi).new(
       [
           acc1, // adding acc1 as owner
           acc2, // adding acc2 as owner
