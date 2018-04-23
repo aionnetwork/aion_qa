@@ -1,0 +1,162 @@
+
+%% 
+%% LaTeX Boilerplate (http://github.com/gbluma/latex-boilerplate/)
+%% 
+
+\documentclass[a4paper,english]{article}
+\setlength{\parindent}{0pt}
+
+\usepackage{csvsimple}
+\usepackage{tabularx}
+\usepackage[scientific-notation=true]{siunitx}
+\usepackage{adjustbox}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+
+\newcommand{\rnd}[1]{
+  \num[round-mode=places, round-precision=2]{#1}
+}
+
+\newcommand{\graphcosts}[1]{
+\begin{tabular}{|c|c|c|c|c|c|c|c|}%
+    \hline
+    \textbf{Function} & \textbf{GasUsed} & \textbf{$w_{low}$} & \textbf{$w_{med}$} & \textbf{$w_{high}$} & \textbf{$\$_{low}$} & \textbf{$\$_{med}$} & \textbf{$\$_{high}$}%
+    \csvreader[head to column names]{#1}{}%
+    {\\\hline\csvcoli&\rnd{\csvcolii}&\rnd{\csvcoliii}&\rnd{\csvcoliv}&\rnd{\csvcolv}&\rnd{\csvcolvi}&\rnd{\csvcolvii}&\rnd{\csvcolviii}}%
+    \\\hline
+\end{tabular}
+}
+
+\title{Gas Usage}
+\author{Yao Sun\\
+  \small{\texttt{yao@nuco.io}}
+}
+\date{19 September, 2017}
+
+\begin{document}
+
+\maketitle
+
+Estimated gas usage is concerned with the gas costs for immediate operation of the sale, and estimated future usages (Savings, Token), we provide the costs and some context as to the reasoning behind the costs.
+
+Results were derived from the following setup:
+
+\begin{itemize}
+  \item TestRPC v4.1.1 (ganache-core: 1.1.2)
+  \item Truffle v3.4.9
+  \item web3 v0.4.12
+  \item NodeJS v8.5.0
+  \item NPM v5.3.0
+\end{itemize}
+
+\section{Definitions}
+
+We first define the units used in this report
+
+\begin{itemize}
+  \item $e$ - Ether
+  \item $ae$ - atto-Ether, also known as wei($w$), $1w = 1 * 10^{-18}e$
+  \item $ne$ - nano-Ether, also known as gwei/Giga-wei($gw$), $1gw = 1 * 10^{-9}e$
+  \item $v$ - The price in terms of ether value to CAD. (Around $\$370$)
+\end{itemize}
+
+The default costs parameters were set to the following on September 19th, 2017:
+
+\begin{itemize}
+  \item $g_{low} = 5.0 gw$
+  \item $g_{med} = 20.0 gw$
+  \item $g_{high} = 24.504381517 gw$
+\end{itemize}
+
+\section{Sales}
+
+\begin{adjustbox}{center, label={sales_costs}, caption={Costs in the sales mechanism}, float=table}
+  \graphcosts{sales_gas.csv}
+\end{adjustbox}
+
+Referring to Table \ref{sales_costs}, the sales contracts are relatively simple, the only point of interest being that our gas costs for ether deposits are higher than the ambient cost ($2300g$), therefore we must set a custom gasLimit. Recommended gas limit is $100000g$, because it is an easy to remember number far greater than $48100g$.
+
+\section{Savings}
+
+\begin{adjustbox}{center, label={savings_costs}, caption={Savings contract costs}, float=table}
+  \graphcosts{savings_costs.csv}
+\end{adjustbox}
+
+\begin{figure}
+  \begin{center}
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{ICO} & \textbf{Users} \\
+    \hline
+    OmiseGO & 360953 \\
+    EOS & 84246 \\
+    Golem & 63328 \\
+    Status & 38785 \\
+    0x & 20734 \\
+    Bancor & 12739 \\
+    Gnosis & 5667 \\
+    FunFair & 4936 \\
+    \hline
+    \end{tabular}
+    \label{holders}
+    \caption{Existing Post-ICO Token Holders Amount}
+  \end{center}
+\end{figure}
+
+Referring to \ref{holders}, which is the closest public sales (but may not be accurate entirely for our pre-sale). Due to the fact that these are existing ICOs, their userbase may have expanded since the ICO, we take the lower end of the range and set $n_{users}=5000$.
+
+There are two ways to deposit tokens into the savings contract. The first is \textbf{bulkDepositTo}, which is used for users that have received liquid tokens, but want to deposit them. The second is \textbf{multiMint}, used by us to mint users of the sale that have deposited ether with the \textit{intent} for savings $n_{mm} = 100$, $n_{bulk} = 50$.
+
+\begin{equation}
+\begin{aligned}
+  C_{mm} &= (n_{users}/n_{mm})*c_{multiMint} \\
+         &= 209.5 (low) \\
+         &= 840 (med) \\
+         &= 1030 (high)
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+  C_{mm} &= (n_{users}/n_{bulk})*c_{multiMint} \\
+         &= 515 (low) \\
+         &= 2060 (med) \\
+         &= 2520 (high)
+\end{aligned}
+\end{equation}
+
+The first cost is more significant to us, as liquid token holders will probably incur their own costs for depositing towards a savings contract. The other significant cost incurred in this contract is operational, \textbf{withdraw}, as we can see, for one user a monthly schedule (plus special) costs $3.63$. We can derive the cost of monthly by assuming $n_{batch} = 50$.
+
+\begin{equation}
+\begin{aligned}
+  C_{withdraw}  &= n_{users}*c_{withdraw_{36+1}} - n_{users}*36*c_{sendTransaction} + \\
+                &36*c_{sendTransaction} \\
+                &= 11275.90(low) \\
+                &= 45103.60(med) \\
+                &= 55261.80(high)
+\end{aligned}
+\end{equation}
+
+\section{Token}
+
+\begin{adjustbox}{center, label={token_costs}, caption={Token contract costs}, float=table}
+  \graphcosts{token_costs.csv}
+\end{adjustbox}
+
+Token contract costs are all operational (for the user), the only costs incurred on us is \textbf{deployment} and \textbf{multiMint}. Similar to the multiMint for savings, we calculate the cost $n_{batch}=100$.
+
+\begin{equation}
+\begin{aligned}
+  C_{multiMint} &= (n_{users}/n_{batch}) * c_{multiMint(100)} \\
+                &= 272(low) \\
+                &= 1085(medium) \\
+                &= 1330(high)
+\end{aligned}
+\end{equation}
+
+\section{Conclusion}
+
+By far the largest cost for us is the operational cost of the monthly withdrawals for the savings contract. However, we can mitigate this be either withdrawing at a decrease frequency, or pushing the responsibility to migrate on the user.
+
+\end{document}
