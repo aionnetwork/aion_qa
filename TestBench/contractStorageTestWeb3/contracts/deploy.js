@@ -11,7 +11,8 @@ module.exports = function(w3, acc, pass, abi, code){
                     w3.eth.contract(abi).new({
                         from: acc,
                         data: code,
-                        gas: 4699999
+                        gas: 4699999,
+                        gasPrice: 1
                     }, (err, tx) => {
                         if (err) {
                          //   console.log('error in deploying contract ' + err);

@@ -41,7 +41,8 @@ function sendTransactions() {
             () => {
                 let hash = contractInstance.testStorage(i, 'prop-' + i, args.iteration, {
                     from: a0,
-                    gas: 4500000
+                    gas: 1000000,
+                    gasPrice: 1
                 });
                 console.log('tx', i, hash);
                 i++;
