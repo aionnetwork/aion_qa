@@ -18,7 +18,6 @@ public class ValidateAccounts {
     private static List<Address> accountList = new ArrayList<>();
     private static IAionAPI api;
     private static Address accountFrom;
-    private static long minBalance;
     private static long expectedBalance;
     private static BlockingDeque<byte[]> queue = new LinkedBlockingDeque<>();
     private static boolean isActive = true;

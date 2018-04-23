@@ -26,8 +26,7 @@ public class TransactionSenderThread {
         AtomicInteger count = new AtomicInteger(0);
         AtomicInteger dropped = new AtomicInteger(0);
         BlockingQueue<byte[]> queue = new LinkedBlockingQueue<>();
-        //String head_addr = "0xa00000000000000000000000000000000000000000000";
-        //Address newAccount = Address.wrap(head_addr + tail_addr.toString());
+
         Thread t = new Thread(() -> {
             while (true) {
                 try {
@@ -89,12 +88,6 @@ public class TransactionSenderThread {
                         api.getTx().fastTxbuild(builder.createTxArgs());
                         byte[] hash = ((MsgRsp) api.getTx().nonBlock().sendTransaction(null).getObject()).getMsgHash().getData();
                         queue.add(hash);
-                        //tail_addr--;
-                        //newAccount = Address.wrap(head_addr + String.valueOf(tail_addr));
-//                        if (count.get() >= totalTxs) {
-//                            t.interrupt();
-//                            break;
-//                        }
                     }
                     Thread.sleep(interval);
                 }
@@ -113,8 +106,6 @@ public class TransactionSenderThread {
         return "0a" + sb.toString().substring(0, 62);
     }
 
-    // return (int) (count.get() / ((System.currentTimeMillis() - startTime) / 1000));
-    //}
 
     public static void tearDown() {
         api.destroyApi();

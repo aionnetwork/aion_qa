@@ -29,6 +29,8 @@ public class TransactionSenderThreadTxt {
     private static AtomicInteger count = new AtomicInteger(0);
     private static AtomicInteger dropped = new AtomicInteger(0);
     private static int queueMax;
+    private static int errorCount = 0;
+
     public static void main(String[] args) {
         accountFrom = Address.wrap(args[0]);
         String password = args[1];
@@ -54,9 +56,6 @@ public class TransactionSenderThreadTxt {
                 System.out.println("[Log] File read complete.");
                 try {
                     validateAccounts();
-                    //System.out.println("[Log] Validating transfers ..");
-                    //validateTransfers();
-                    //System.out.println("[Log] Transfer validation complete.");
                     System.exit(0);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -81,9 +80,24 @@ public class TransactionSenderThreadTxt {
                     if (duration != 0)
                         System.out.println("proccessed tx: " + count + ", queue size: " + qSize + ", dropped: " + dropped
                                 + ", throughput (tx/sec): " + count.get() / duration);
+
+                    if (count.intValue() > 0 && queue.size() == 0) {
+                        errorCount++;
+                    }
+
+                    if (errorCount > 100) {
+                        System.out.println("restarting api connection.");
+                        isActive = false;
+                        tearDown();
+                        Thread.sleep(5000);
+                        api = IAionAPI.init();
+                        api.connect(url);
+                        isActive = true;
+                        errorCount = 0;
+                    }
+
                     for (int i = 0; i < qSize; i++) {
                         byte[] msgHash = queue.take();
-
                         ApiMsg apiMsg = api.getTx().getMsgStatus(ByteArrayWrapper.wrap(msgHash));
                         if (((MsgRsp) apiMsg.getObject()).getStatus() == 54) {
                             System.out.println("restarting api connection.");
@@ -99,8 +113,7 @@ public class TransactionSenderThreadTxt {
                             count.incrementAndGet();
                         } else if (((MsgRsp) apiMsg.getObject()).getStatus() == 102 || ((MsgRsp) apiMsg.getObject()).getStatus() <= 2) {
                             dropped.incrementAndGet();
-                        }
-                        else{
+                        } else {
                             queue.put(msgHash);
                         }
                     }
@@ -118,25 +131,25 @@ public class TransactionSenderThreadTxt {
             }
             BigInteger bal = api.getChain().getBalance(accountList.get(i)).getObject();
             if (bal.compareTo(BigInteger.valueOf(expectedBalance)) < 0) {
-            BigInteger diff = BigInteger.valueOf(expectedBalance);
-            Address accountTo = accountList.get(i);
-            TxArgs.TxArgsBuilder builder = new TxArgs.TxArgsBuilder()
-                    .data(ByteArrayWrapper.wrap("TestSendTransaction!".getBytes()))
-                    .from(accountFrom)
-                    .to(accountTo)
-                    .nrgLimit(23000)
-                    .nrgPrice(1)
-                    .value(diff)
-                    .nonce(BigInteger.ZERO);
+                BigInteger diff = BigInteger.valueOf(expectedBalance);
+                Address accountTo = accountList.get(i);
+                TxArgs.TxArgsBuilder builder = new TxArgs.TxArgsBuilder()
+                        .data(ByteArrayWrapper.wrap("TestSendTransaction!".getBytes()))
+                        .from(accountFrom)
+                        .to(accountTo)
+                        .nrgLimit(23000)
+                        .nrgPrice(1)
+                        .value(diff)
+                        .nonce(BigInteger.ZERO);
 
-            api.getTx().fastTxbuild(builder.createTxArgs());
+                api.getTx().fastTxbuild(builder.createTxArgs());
 
-            byte[] hash = ((MsgRsp) api.getTx().nonBlock().sendTransaction(null).getObject()).getMsgHash().getData();
-            queue.add(hash);
+                byte[] hash = ((MsgRsp) api.getTx().nonBlock().sendTransaction(null).getObject()).getMsgHash().getData();
+                queue.add(hash);
 
-            Thread.sleep(interval);
+                Thread.sleep(interval);
+            }
         }
-         }
     }
 
 
@@ -158,6 +171,7 @@ public class TransactionSenderThreadTxt {
             e.printStackTrace();
         }
     }
+
     public static void tearDown() {
         api.destroyApi();
     }

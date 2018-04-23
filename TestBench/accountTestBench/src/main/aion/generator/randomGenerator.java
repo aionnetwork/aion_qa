@@ -1,11 +1,8 @@
 package main.aion.generator;
 
-import org.aion.api.type.Key;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.util.List;
 import java.util.Random;
 
 public class randomGenerator {
