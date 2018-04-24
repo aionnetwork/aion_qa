@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="transactionSender2">
+    <output-path>$PROJECT_DIR$/out/artifacts/transactionSender2</output-path>
+    <root id="archive" name="accountTestBench.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/TransactionSender2/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="accountTestBench" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/aion_api.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

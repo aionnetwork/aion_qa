@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aion_api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/aion_api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

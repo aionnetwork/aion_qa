@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="testNrg">
+    <output-path>$PROJECT_DIR$/out/artifacts/testNrg</output-path>
+    <root id="archive" name="sendTxns.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="sendTxns" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/aion_api.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

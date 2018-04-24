@@ -12,7 +12,7 @@ module.exports = function(w3, acc, pass, abi, code){
                         from: acc,
                         data: code,
                         gas: 4699999,
-                        gasPrice: 1
+                        gasPrice: 10000000000
                     }, (err, tx) => {
                         if (err) {
                          //   console.log('error in deploying contract ' + err);
