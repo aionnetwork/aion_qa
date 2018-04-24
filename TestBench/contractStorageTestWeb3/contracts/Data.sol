@@ -10,6 +10,7 @@ contract Data {
     Data[] public dataArray;
     Data[] public dataArray2;
     Data[] public dataArray3;
+    uint public lastNumber;
 
     struct Data {
         uint id;
@@ -37,6 +38,11 @@ contract Data {
             dataArray3.push(data);
         }
 
+        lastNumber = i;
         DataAdded(i);
+    }
+
+    function getLastNumber() constant returns (uint){
+        return lastNumber;
     }
 }

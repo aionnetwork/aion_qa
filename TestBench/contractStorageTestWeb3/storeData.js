@@ -35,19 +35,21 @@ compile(web3, sol).then((res) => {
 
 function sendTransactions() {
     contractInstance = web3.eth.contract(abi).at(contractAddr);
-    let i = 0;
-    setInterval(() => {
-        unlock(web3, a0, pw0).then(
-            () => {
-                let hash = contractInstance.testStorage(i, 'prop-' + i, args.iteration, {
-                    from: a0,
-                    gas: 1000000,
-                    gasPrice: 1
-                });
-                console.log('tx', i, hash);
-                i++;
-            })
-    }, args.intervalTime);
+
+    let i = contractInstance.getLastNumber().toNumber();
+
+    unlock(web3, a0, pw0).then(
+        setInterval(() => {
+
+            let hash = contractInstance.testStorage(i, 'prop-' + i, args.iteration, {
+                from: a0,
+                gas: 1500000,
+                gasPrice: 1
+            });
+            console.log('tx', i, hash);
+            i++;
+
+        }, args.intervalTime));
 }
 
 
