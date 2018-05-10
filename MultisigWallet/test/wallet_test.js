@@ -74,7 +74,7 @@ describe('a) contract compile', () => {
     deploy(web3, a0, a1, a2, pw, abi, code)
         .then((res) => {
             contractAddr = res.address;
-            contractInstance = web3.eth.describe(abi).at(contractAddr);
+            contractInstance = web3.eth.contract(abi).at(contractAddr);
 
             console.log('[log] contract address:', res.address);
             done();
@@ -107,8 +107,7 @@ describe('b) multiowned contract', () => {
     contractInstance.addOwner(add_addr, {
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -146,8 +145,7 @@ describe('b) multiowned contract', () => {
     contractInstance.removeOwner(remove_addr, {
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -190,8 +188,7 @@ describe('b) multiowned contract', () => {
     contractInstance.changeOwner(from_addr, to_addr, {
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -233,8 +230,7 @@ describe('b) multiowned contract', () => {
     contractInstance.changeRequirement(new_required, {
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -275,8 +271,7 @@ describe('c) multiowned contract', () => {
     contractInstance.setDailyLimit(new_dailyLimit, {
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -305,8 +300,7 @@ describe('c) multiowned contract', () => {
     contractInstance.resetSpentToday({
       from: a0,
       data: code,
-      gas: 1000000,
-      gasPrice: 1
+      gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -381,8 +375,7 @@ describe('c) Wallet testing', () => {
     let txAmt = 1000000000000000000;
     contractInstance.execute(a4, web3.toWei(1, 'ether'), '0x', {
         from: a0,
-        gas: 1000000,
-        gasPrice: 1,
+        gas: 1000000
     },
     (err, res) => {
         if (err)
@@ -424,8 +417,7 @@ describe('c) Wallet testing', () => {
       let txAmt = 11000000000000000000;
       contractInstance.execute(a4, web3.toWei(11, 'ether'), '0x', {
           from: a0,
-          gas: 1000000,
-          gasPrice: 1,
+          gas: 1000000
       },
       (err, res) => {
           if (err)
@@ -464,8 +456,7 @@ describe('c) Wallet testing', () => {
       contractInstance.confirm(
         operation, {
             from: a1,
-            gas: 1000000,
-            gasPrice: 1,
+            gas: 1000000
         },
         (err, res) => {
           if (err)
@@ -477,8 +468,7 @@ describe('c) Wallet testing', () => {
       contractInstance.confirm(
         operation, {
             from: a3,
-            gas: 1000000,
-            gasPrice: 1,
+            gas: 1000000
         },
         (err, res) => {
           if (err)
