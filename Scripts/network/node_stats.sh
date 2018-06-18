@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Please ammend log file path as appropriate
-file=../log/aionCurrentLog.dat
+file=../../../log/aionCurrentLog.dat
 #file=testfile
 
 # Please ammend p2p line seperation as appropriate
