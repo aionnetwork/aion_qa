@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Please ammend log file path as appropriate
 file=../../../log/aionCurrentLog.dat
 #file=testfile
@@ -8,13 +7,10 @@ file=../../../log/aionCurrentLog.dat
 echo 'Which peers sync to blocks:'
 echo
 
-# Check imported best blocks and its incoming peers
-# If imported best: Node / Hash / Number
-
 echo '## ACTIVE NODES ID ##'
+# active node-id=c33d10
 temp=$(egrep -a -o 'active node\-id\=[a-z0-9]{0,6}' $file | cut -d "=" -f2)
 id=($temp)
-# active node-id=c33d10 ip=13.92.155.115
 
 count=$(echo $temp | grep -o ' ' | wc -l)
 ((count++))
@@ -44,3 +40,6 @@ for ((i=0; i<${#id[@]}; ++i)); do
   echo
 
 done
+
+# Check imported best blocks and its incoming peers
+# If imported best: Node / Hash / Number

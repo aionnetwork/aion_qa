@@ -1,0 +1,13 @@
+**virtual environment setup needed**
+
+Libraries to install;
+1. Pandas
+2. MySQL connector
+3. Selenium
+
+Drivers to install;
+1. Firefox Geckodriver (add to $PATH)
+ > tar -xvzf geckodriver-v0.21.0-linux64.tar.gz 
+ > chmod +x geckodriver
+ > sudo mv geckodriver /usr/local/bin/
+
