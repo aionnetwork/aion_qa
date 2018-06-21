@@ -3,6 +3,7 @@
 # Please ammend log file path as appropriate
 file=../../../log/aionCurrentLog.dat
 #file=testfile
+#file=aion.2018-06-19.0.log
 
 echo 'Which peers sync to blocks:'
 echo
@@ -31,7 +32,10 @@ for ((i=0; i<${#id[@]}; ++i)); do
     block=$(egrep -a -o "node = ${id[i]}.*result = ${type[n]}" $file | rev | cut -d "," -f3 | rev | cut -c 11-)
     echo $block
 
-    count=$(echo $block | grep -o ' ' | wc -l)
+    count=$(echo $block | grep -o " " | wc -l)
+    if [ ! -z "$block" ]; then 
+      ((count++))
+    fi
     echo "[ total: $count ]"
 
     echo

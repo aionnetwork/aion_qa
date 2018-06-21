@@ -5,7 +5,7 @@ file=../../../log/aionCurrentLog.dat
 #file=testfile
 
 # Please ammend p2p line seperation as appropriate
-skip=200
+skip=800
 
 echo "Node stuck blocks:"
 echo
