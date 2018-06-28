@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#cd ../../..
 #file=../../../log/aionCurrentLog.dat
 file=../testfile
 
