@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#file=aion.2018-06-19.0.log
 file=../testfile
 skip=10
 let "statusSkip=$skip/10"

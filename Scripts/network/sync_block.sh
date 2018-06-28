@@ -3,7 +3,6 @@
 # Please ammend log file path as appropriate
 #file=../../../log/aionCurrentLog.dat
 file=../testfile
-#file=aion.2018-06-19.0.log
 
 echo 'Which peers sync to blocks:'
 echo
