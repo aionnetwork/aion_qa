@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Please ammend log file path as appropriate
-file=../../../log/aionCurrentLog.dat
-#file=testfile
+#file=../../../log/aionCurrentLog.dat
+file=../testfile
 #file=aion.2018-06-19.0.log
 
 echo 'Which peers sync to blocks:'
@@ -30,7 +30,9 @@ for ((i=0; i<${#id[@]}; ++i)); do
 
     echo $n: ${type[n]}
     block=$(egrep -a -o "node = ${id[i]}.*result = ${type[n]}" $file | rev | cut -d "," -f3 | rev | cut -c 11-)
-    echo $block
+    temp=$(echo $block | rev | cut -d" " -f1-50 | rev)
+    #echo "~Only showing last 50 blocks"
+    echo $temp
 
     count=$(echo $block | grep -o " " | wc -l)
     if [ ! -z "$block" ]; then 

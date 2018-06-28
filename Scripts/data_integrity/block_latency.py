@@ -1,24 +1,30 @@
+import sys
 import time
 from datetime import datetime
 import pandas as pd
 import mysql.connector as sql
 import subprocess
 pd.set_option('max_colwidth', 5000)
+pd.set_option('display.max_columns', 10)
+pd.options.display.float_format = '{:15}'.format
 
 ### PARAMETERS ###
-numBlocks = 32
+if len(sys.argv) == 1:
+    numBlocks = 10
+else:
+    numBlocks = int(sys.argv[1])
 
 user = "powerbi"
 pswrd = "rhsmmd7XPPoWCOOY"
 host = "104.215.122.28"
 db = "aionv3"
+
 cnx = sql.connect(user=user, password=pswrd, host=host, database=db)
+result = subprocess.run(['./blocks.sh', str(numBlocks)], stdout=subprocess.PIPE)
 
 ### SYNCED ###
-result = subprocess.run(['./blocks.sh', str(numBlocks)], stdout=subprocess.PIPE)
-output = result.stdout.decode('utf-8')
-
 # Assigning shell outputs
+output = result.stdout.decode('utf-8')
 temp = output.split()
 
 blocks = [0] * numBlocks
@@ -59,8 +65,14 @@ for i in mined:
 d = {'blocks': blocks, 'synced': synced, 'mined': mined, 'chain': chain, 'ts1': ts1, 'ts2': ts2}
 df = pd.DataFrame(data=d).set_index("blocks")
 df["latency"] = df["ts2"] - df["ts1"]
+df = df[["mined", "ts1", "synced", "ts2", "latency"]]
+print(df)
+print("\nAverage Latency (Last", numBlocks, "Blocks):", df["latency"].mean())
 
-print(df[["mined", "ts1", "synced", "ts2", "latency"]])
+### EXPORT ###
+last = df["ts2"].max()
+#df.to_csv('block_latency ' + datetime.fromtimestamp(int(last)).strftime('%Y-%m-%d %H:%M:%S') + '.csv')
+
 cnx.close()
 
 # known issue: import must be synced to latest block

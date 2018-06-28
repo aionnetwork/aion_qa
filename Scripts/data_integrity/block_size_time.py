@@ -9,6 +9,10 @@ pd.set_option('max_colwidth', 5000)
 view = "mainnet"
 #view = "testnet"
 
+user = "powerbi"
+pswrd = "rhsmmd7XPPoWCOOY"
+host = "104.215.122.28"
+
 if view == "mainnet":
     print("\nMainnet Kilimanjaro")
     temp1 = "mainnet"
@@ -22,9 +26,6 @@ else:
     temp3 = 128
     db = "aionv3_conquest"
 
-user = "powerbi"
-pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
 cnx = sql.connect(user=user, password=pswrd, host=host, database=db)
 
 ### DASHBOARD ###
@@ -72,17 +73,20 @@ df3 = pd.read_sql("SELECT " + query2 + " FROM block WHERE block_timestamp > " + 
 total_tx24h = df3["num_transactions"].sum()
 tx_block24h = df3["num_transactions"].max()
 
+hash_rate = last_diff / avg_time
+txn_second = total_tx / tTime32b
+
 ### OUTPUT ###
 print("Data Integrity Check @", datetime.now())
 
 print("\n1. Database          ", df['block_number'].max(), "(current)")
 #print("Average Block Size:  ", avg_size64b, "bytes")
 print("Average Block Time:  ", avg_time64b, "seconds")
-print("Network Hash Rate:   ", last_diff / avg_time, "Sol/s")
+print("Network Hash Rate:   ", hash_rate, "Sol/s")
 print("Average Difficulty   ", avg_diff)
 print("Nrg Consumed / Block:", avg_nrgc, "NRG")
 print("NRG Limit / Block:   ", avg_nrgl, "NRG")
-print("Txn / Second:        ", total_tx / tTime32b)
+print("Txn / Second:        ", txn_second)
 print("Peak Txn / Block:    ", tx_block24h, "(24Hr)")
 print("Txn Count:           ", total_tx24h, "(24Hr)")
 

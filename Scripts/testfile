@@ -1,0 +1,826 @@
+18-06-21 18:06:41.285 INFO  GEN  [main]: 
+                     _____                  
+      .'.       |  .~     ~.  |..          |
+    .'   `.     | |         | |  ``..      |
+  .''''''''`.   | |         | |      ``..  |
+.'           `. |  `._____.'  |          ``|
+
+                    NETWORK  v0.2.7.c3656b4
+
+
+18-06-21 18:06:41.584 INFO  GEN  [main]: loaded block <num=484180, root=1061b247... l=32>
+18-06-21 18:06:41.693 DEBUG P2P  [main]: handler route=256 v-c-a=0-1-0 name=ReqStatusHandler
+18-06-21 18:06:41.695 DEBUG P2P  [main]: handler route=257 v-c-a=0-1-1 name=ResStatusHandler
+18-06-21 18:06:41.695 DEBUG P2P  [main]: handler route=258 v-c-a=0-1-2 name=ReqBlocksHeadersHandler
+18-06-21 18:06:41.695 DEBUG P2P  [main]: handler route=259 v-c-a=0-1-3 name=ResBlocksHeadersHandler
+18-06-21 18:06:41.695 DEBUG P2P  [main]: handler route=260 v-c-a=0-1-4 name=ReqBlocksBodiesHandler
+18-06-21 18:06:41.696 DEBUG P2P  [main]: handler route=261 v-c-a=0-1-5 name=ResBlocksBodiesHandler
+18-06-21 18:06:41.696 DEBUG P2P  [main]: handler route=262 v-c-a=0-1-6 name=BroadcastTxHandler
+18-06-21 18:06:41.696 DEBUG P2P  [main]: handler route=263 v-c-a=0-1-7 name=BroadcastNewBlockHandler
+18-06-21 18:06:41.726 INFO  P2P  [sync-ss]: sync-status avg-import=0.00 b/s td=3351376011925/0 b-num=484180/0 b-hash=495f955a89a15ac92c82465e5d88bc7ef734e0969eb3b66010e6cc40028ba0f9/
+18-06-21 18:06:41.825 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[  7] inbound[  0] outbound[  0] active[  0]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+18-06-21 18:06:41.825 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:06:41.844 INFO  GEN  [main]: <node-started endpoint=p2p://c5886bee-7b38-4197-99cf-980954820cc4@0.0.0.0:30303>
+18-06-21 18:06:41.854 INFO  CONS [main]: <sealing-disabled>
+18-06-21 18:06:41.879 INFO  API  [main]: AionAPI Implementation Initiated
+18-06-21 18:06:41.887 INFO  API  [zmq-api]: Starting Aion Api Server <port=8547>
+18-06-21 18:06:41.982 INFO  API  [main]: <rpc-server - started on 127.0.0.1:8545>
+18-06-21 18:06:42.854 DEBUG P2P  [p2p-tcp]: success-connect node-id=c33d10 ip=
+18-06-21 18:06:42.857 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=c33d10 ip=13.92.155.115
+18-06-21 18:06:42.929 DEBUG P2P  [p2p-in]: outbound -> active node-id=c33d10 ip=13.92.155.115
+18-06-21 18:06:43.873 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 977563, number = 484165, txs = 4, result = EXIST, time elapsed = 1 ms>
+18-06-21 18:06:43.873 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 7ece37, number = 484166, txs = 1, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.874 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 5812c7, number = 484167, txs = 1, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.874 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 87d64c, number = 484168, txs = 1, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.874 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 77fa8f, number = 484169, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.874 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 525f39, number = 484170, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.875 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = a8016e, number = 484171, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.875 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 8912b7, number = 484172, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.875 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 16179d, number = 484173, txs = 3, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.876 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = c9a2f0, number = 484174, txs = 2, result = EXIST, time elapsed = 1 ms>
+18-06-21 18:06:43.876 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 899e9d, number = 484175, txs = 2, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.876 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 9850a9, number = 484176, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.877 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 0cc21a, number = 484177, txs = 5, result = EXIST, time elapsed = 1 ms>
+18-06-21 18:06:43.877 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 999a3b, number = 484178, txs = 2, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.877 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 74642b, number = 484179, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.877 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 495f95, number = 484180, txs = 0, result = EXIST, time elapsed = 0 ms>
+18-06-21 18:06:43.910 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 66fb7f, number = 484181, txs = 0, result = IMPORTED_BEST, time elapsed = 32 ms>
+18-06-21 18:06:43.913 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 2c1ae5, number = 484182, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:43.933 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = a2babb, number = 484183, txs = 1, result = IMPORTED_BEST, time elapsed = 20 ms>
+18-06-21 18:06:43.947 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = b419bf, number = 484184, txs = 4, result = IMPORTED_BEST, time elapsed = 13 ms>
+18-06-21 18:06:43.952 DEBUG P2P  [p2p-tcp]: success-connect node-id=c33d22 ip=
+18-06-21 18:06:43.952 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=c33d22 ip=51.144.42.220
+18-06-21 18:06:43.975 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 85e8f7, number = 484185, txs = 5, result = IMPORTED_BEST, time elapsed = 27 ms>
+18-06-21 18:06:43.985 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 9359f8, number = 484186, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:43.988 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 44f0be, number = 484187, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:43.991 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = c3fb04, number = 484188, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:44.076 DEBUG P2P  [p2p-in]: outbound -> active node-id=c33d22 ip=51.144.42.220
+18-06-21 18:06:45.155 DEBUG P2P  [p2p-tcp]: success-connect node-id=c33d30 ip=
+18-06-21 18:06:45.156 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=c33d30 ip=52.231.187.227
+18-06-21 18:06:45.367 DEBUG P2P  [p2p-in]: outbound -> active node-id=c33d30 ip=52.231.187.227
+18-06-21 18:06:45.829 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = e47fd8, number = 484189, txs = 3, result = IMPORTED_BEST, time elapsed = 6 ms>
+18-06-21 18:06:45.831 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 62df26, number = 484190, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:45.832 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = ea5f53, number = 484191, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:45.843 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = c8cda7, number = 484192, txs = 3, result = IMPORTED_BEST, time elapsed = 10 ms>
+18-06-21 18:06:45.846 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 9c1469, number = 484193, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:45.848 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 70f788, number = 484194, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:45.854 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 773ce8, number = 484195, txs = 1, result = IMPORTED_BEST, time elapsed = 6 ms>
+18-06-21 18:06:45.861 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = b03c46, number = 484196, txs = 1, result = IMPORTED_BEST, time elapsed = 7 ms>
+18-06-21 18:06:46.286 DEBUG P2P  [p2p-tcp]: success-connect node-id=c33d4c ip=
+18-06-21 18:06:46.286 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=c33d4c ip=191.232.164.119
+18-06-21 18:06:46.364 INFO  SYNC [p2p-worker-2]: <import-status: node = c33d10, hash = 7889c1, number = 484280, txs = 8, result = NOT_IN_RANGE>
+18-06-21 18:06:46.423 DEBUG P2P  [p2p-in]: outbound -> active node-id=c33d4c ip=191.232.164.119
+18-06-21 18:06:47.147 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = ef95e5, number = 484197, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:47.153 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = c30630, number = 484198, txs = 0, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:47.165 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 8be800, number = 484199, txs = 1, result = IMPORTED_BEST, time elapsed = 12 ms>
+18-06-21 18:06:47.173 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = b270e8, number = 484200, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:47.175 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = e81cd6, number = 484201, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:47.179 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 9a46e4, number = 484202, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:47.181 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = ee6616, number = 484203, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:47.188 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = e39db6, number = 484204, txs = 3, result = IMPORTED_BEST, time elapsed = 7 ms>
+18-06-21 18:06:47.315 DEBUG P2P  [p2p-tcp]: success-connect node-id=c33d5a ip=
+18-06-21 18:06:47.316 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=c33d5a ip=13.89.244.125
+18-06-21 18:06:47.951 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = ea6d76, number = 484205, txs = 4, result = IMPORTED_BEST, time elapsed = 9 ms>
+18-06-21 18:06:47.956 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = cdf589, number = 484206, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:47.961 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = d8d674, number = 484207, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:47.967 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = fefbf1, number = 484208, txs = 1, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:47.969 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 384471, number = 484209, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:47.984 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 741cc7, number = 484210, txs = 6, result = IMPORTED_BEST, time elapsed = 14 ms>
+18-06-21 18:06:47.988 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = a0a5d9, number = 484211, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:47.990 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 6badaf, number = 484212, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:48.709 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d4c, hash = 0635b1, number = 484281, txs = 0, result = NOT_IN_RANGE>
+18-06-21 18:06:51.081 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 2fd5b7, number = 484213, txs = 4, result = IMPORTED_BEST, time elapsed = 20 ms>
+18-06-21 18:06:51.088 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = ad5029, number = 484214, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:51.094 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 1dc9b1, number = 484215, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:51.097 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = f7f663, number = 484216, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:51.102 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 8645b1, number = 484217, txs = 1, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:51.115 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = f902f8, number = 484218, txs = 3, result = IMPORTED_BEST, time elapsed = 12 ms>
+18-06-21 18:06:51.120 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 07fd18, number = 484219, txs = 1, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:51.122 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 659e04, number = 484220, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:51.755 INFO  P2P  [sync-ss]: sync-status avg-import=4.21 b/s td=3351819334454/3352494418704 b-num=484220/484281 b-hash=659e0402b1ff22e936791c1a6862525aada965d1978cc711114637c5be0fa1e1/0635b18c057e096fe5878b2925b5753524a4feb50d756e01e884e97dcdf8504b
+18-06-21 18:06:51.829 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  1] active[  4]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352494418704     484281 0635b18c057e096fe5878b2925b5753524a4feb50d756e01e884e97dcdf8504b   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:c33d22 y    3352494418704     484281 0635b18c057e096fe5878b2925b5753524a4feb50d756e01e884e97dcdf8504b   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352494418704     484281 0635b18c057e096fe5878b2925b5753524a4feb50d756e01e884e97dcdf8504b 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352494418704     484281 0635b18c057e096fe5878b2925b5753524a4feb50d756e01e884e97dcdf8504b  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:06:51.829 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:06:52.008 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 5557b9, number = 484221, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:52.027 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 3c6460, number = 484222, txs = 4, result = IMPORTED_BEST, time elapsed = 18 ms>
+18-06-21 18:06:52.032 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 3db73c, number = 484223, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:52.037 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = f5e655, number = 484224, txs = 0, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:52.048 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 9f52ce, number = 484225, txs = 0, result = IMPORTED_BEST, time elapsed = 10 ms>
+18-06-21 18:06:52.054 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 2a66d7, number = 484226, txs = 0, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:52.059 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = b37dda, number = 484227, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:52.066 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 1d29a5, number = 484228, txs = 0, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:54.044 DEBUG P2P  [p2p-in]: route-cooldown=6 node=c33d22 count=1
+18-06-21 18:06:54.045 DEBUG P2P  [p2p-in]: over-called-route=0-0-6 calls=1 node=c33d22
+18-06-21 18:06:54.071 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 9fc7ad, number = 484229, txs = 4, result = IMPORTED_BEST, time elapsed = 24 ms>
+18-06-21 18:06:54.101 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 964f72, number = 484230, txs = 5, result = IMPORTED_BEST, time elapsed = 29 ms>
+18-06-21 18:06:54.105 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 316c02, number = 484231, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:54.109 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = ffa686, number = 484232, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:54.112 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 3d3f6f, number = 484233, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:54.114 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 4e89a4, number = 484234, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:54.120 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = d0476e, number = 484235, txs = 1, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:06:54.123 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = fd5517, number = 484236, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:55.323 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d30, hash = 248111, number = 484282, txs = 0, result = NOT_IN_RANGE>
+18-06-21 18:06:57.767 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 4c9e20, number = 484237, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:57.772 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 0cc758, number = 484238, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:57.776 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 717262, number = 484239, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:57.780 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = f76c60, number = 484240, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:06:57.783 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = d4685b, number = 484241, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:06:57.785 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = a38bea, number = 484242, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:57.787 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = 353baa, number = 484243, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:57.796 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = f86538, number = 484244, txs = 5, result = IMPORTED_BEST, time elapsed = 9 ms>
+18-06-21 18:06:58.328 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=66.207.217.190:30303 result=null
+18-06-21 18:06:58.329 INFO  SYNC [p2p-worker-3]: <import-status: node = c33d22, hash = 391755, number = 484283, txs = 0, result = NOT_IN_RANGE>
+18-06-21 18:06:58.393 DEBUG P2P  [p2p-in]: route-cooldown=261 node=c33d10 count=1
+18-06-21 18:06:58.393 DEBUG P2P  [p2p-in]: over-called-route=0-1-5 calls=1 node=c33d10
+18-06-21 18:06:59.344 DEBUG P2P  [p2p-tcp]: success-connect node-id=a684f4 ip=
+18-06-21 18:06:59.344 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=a684f4 ip=52.60.180.6
+18-06-21 18:06:59.364 DEBUG P2P  [p2p-in]: outbound -> active node-id=a684f4 ip=52.60.180.6
+18-06-21 18:06:59.864 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 79b922, number = 484245, txs = 1, result = IMPORTED_BEST, time elapsed = 7 ms>
+18-06-21 18:06:59.867 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 539c8e, number = 484246, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:06:59.868 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 108b4b, number = 484247, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:59.883 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = f01d40, number = 484248, txs = 9, result = IMPORTED_BEST, time elapsed = 14 ms>
+18-06-21 18:06:59.885 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 36ab60, number = 484249, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:59.886 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 4f5d4b, number = 484250, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:59.887 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = e45562, number = 484251, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:06:59.889 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 54e6fc, number = 484252, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:00.440 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d30, hash = 083c87, number = 484284, txs = 0, result = NO_PARENT, time elapsed = 1 ms>
+18-06-21 18:07:01.757 INFO  P2P  [sync-ss]: sync-status avg-import=3.94 b/s td=3352173924029/3352527619825 b-num=484252/484284 b-hash=54e6fc8900431e887c2bdd5765d0ccef781eac974a2ada764ec49c0ff96483ee/083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab
+18-06-21 18:07:01.827 DEBUG P2P  [p2p-clear]: average-delay=61ms
+18-06-21 18:07:01.831 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  1] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352527619825     484284 083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352527619825     484284 083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352527619825     484284 083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352527619825     484284 083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352516550984     484283 391755cc63423dc0981d594d6d3f72fe65d850056a83019b91f57343ec2a511b  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:01.831 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:07:03.875 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = f45a9b, number = 484253, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:03.884 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 788a67, number = 484254, txs = 0, result = IMPORTED_BEST, time elapsed = 8 ms>
+18-06-21 18:07:03.888 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = bafb9b, number = 484255, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:03.899 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 708780, number = 484256, txs = 1, result = IMPORTED_BEST, time elapsed = 9 ms>
+18-06-21 18:07:03.907 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 4b90b7, number = 484257, txs = 0, result = IMPORTED_BEST, time elapsed = 6 ms>
+18-06-21 18:07:03.909 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 5f0a5c, number = 484258, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:03.912 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = 58dc0f, number = 484259, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:03.922 INFO  SYNC [sync-ib]: <import-status: node = c33d30, sync mode = NORMAL, hash = f291ce, number = 484260, txs = 5, result = IMPORTED_BEST, time elapsed = 10 ms>
+18-06-21 18:07:04.452 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=159.89.7.63:30303 result=Connection refused
+18-06-21 18:07:05.970 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = fd0daf, number = 484261, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:07:05.986 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = c435ba, number = 484262, txs = 4, result = IMPORTED_BEST, time elapsed = 15 ms>
+18-06-21 18:07:05.997 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 339629, number = 484263, txs = 1, result = IMPORTED_BEST, time elapsed = 8 ms>
+18-06-21 18:07:06.010 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 9849ee, number = 484264, txs = 4, result = IMPORTED_BEST, time elapsed = 13 ms>
+18-06-21 18:07:06.015 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = c5fdac, number = 484265, txs = 1, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:07:06.021 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 4da912, number = 484266, txs = 4, result = IMPORTED_BEST, time elapsed = 6 ms>
+18-06-21 18:07:06.024 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 5d6983, number = 484267, txs = 1, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:07:06.026 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = d3a2e1, number = 484268, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:07.967 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 4e61af, number = 484269, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:07.967 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 6e3e41, number = 484270, txs = 0, result = IMPORTED_BEST, time elapsed = 0 ms>
+18-06-21 18:07:07.968 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = aa35c2, number = 484271, txs = 0, result = IMPORTED_BEST, time elapsed = 0 ms>
+18-06-21 18:07:07.974 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 36c8c6, number = 484272, txs = 3, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:07:07.977 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 8514f9, number = 484273, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:07.980 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 2aa19f, number = 484274, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:07.982 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = ee9e5e, number = 484275, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:07.983 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 6c6529, number = 484276, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:10.633 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d10, hash = a71473, number = 484285, txs = 0, result = NO_PARENT, time elapsed = 9 ms>
+18-06-21 18:07:10.653 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 662333, number = 484277, txs = 0, result = IMPORTED_BEST, time elapsed = 26 ms>
+18-06-21 18:07:10.661 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 099a0c, number = 484278, txs = 0, result = IMPORTED_BEST, time elapsed = 8 ms>
+18-06-21 18:07:10.663 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 496e78, number = 484279, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:10.679 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 7889c1, number = 484280, txs = 8, result = IMPORTED_BEST, time elapsed = 15 ms>
+18-06-21 18:07:10.683 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 0635b1, number = 484281, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:10.684 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 248111, number = 484282, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:10.685 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 391755, number = 484283, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:10.686 INFO  SYNC [sync-ib]: <import-status: node = a684f4, sync mode = NORMAL, hash = 083c87, number = 484284, txs = 0, result = IMPORTED_BEST, time elapsed = 1 ms>
+18-06-21 18:07:11.758 INFO  P2P  [sync-ss]: sync-status avg-import=3.58 b/s td=3352527619825/3352538694070 b-num=484284/484285 b-hash=083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:07:11.832 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  1] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352538694070     484285 a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352538694070     484285 a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352538694070     484285 a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352538694070     484285 a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352527619825     484284 083c87e2a004651aff78ce0fc00d2f8c5f9b26f9fcd8270a6bb3d60aacc060ab  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:11.832 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:07:12.008 INFO  SYNC [sync-ib]: <import-status: node = c33d10, sync mode = NORMAL, hash = a71473, number = 484285, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:07:13.986 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d10, hash = 4e42d3, number = 484286, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:07:15.461 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=135.23.222.41:30303 result=null
+18-06-21 18:07:17.321 INFO  SYNC [p2p-worker-0]: <import-status: node = c33d10, hash = 24688b, number = 484287, txs = 0, result = IMPORTED_BEST, time elapsed = 4 ms>
+18-06-21 18:07:21.759 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352560853374/3352538694070 b-num=484287/484285 b-hash=24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:07:21.836 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  1] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:21.839 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:07:21.841 DEBUG P2P  [p2p-clear]: close-socket reason=outbound-timeout node=c33d5a ip=13.89.244.125
+18-06-21 18:07:21.845 DEBUG P2P  [p2p-clear]: average-delay=83ms
+18-06-21 18:07:26.471 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=35.232.191.176:30303 result=null
+18-06-21 18:07:31.760 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352560853374/3352538694070 b-num=484287/484285 b-hash=24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:07:31.843 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:31.844 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[1]
+18-06-21 18:07:37.481 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=173.35.99.192:30303 result=null
+18-06-21 18:07:38.685 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=95.85.127.146:30303 result=No route to host
+18-06-21 18:07:39.808 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=98.210.205.226:30303 result=Connection refused
+18-06-21 18:07:41.298 INFO  SYNC [p2p-worker-2]: <import-status: node = c33d10, hash = 30e49b, number = 484288, txs = 0, result = IMPORTED_BEST, time elapsed = 9 ms>
+18-06-21 18:07:41.762 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352571938435/3352538694070 b-num=484288/484285 b-hash=30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:07:41.846 DEBUG P2P  [p2p-clear]: average-delay=84ms
+18-06-21 18:07:41.847 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352560853374     484287 24688bf4ccad703220fa9ffdd249c3e7dcb2163edca4e55087fc4a82cf3f0812  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:41.847 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:07:50.816 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=47.96.11.156:30303 result=null
+18-06-21 18:07:51.762 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352571938435/3352538694070 b-num=484288/484285 b-hash=30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:07:51.844 DEBUG P2P  [p2p-tcp]: success-connect node-id=d38ee6 ip=
+18-06-21 18:07:51.845 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=d38ee6 ip=52.165.228.196
+18-06-21 18:07:51.850 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[127] inbound[  0] outbound[  1] active[  5]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352571938435     484288 30e49be4d61ba08db196b7c9fb455d60258597ddd99d2a87723133a64030b22a  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:07:51.853 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[1]
+18-06-21 18:07:51.882 DEBUG P2P  [p2p-in]: outbound -> active node-id=d38ee6 ip=52.165.228.196
+18-06-21 18:07:53.946 INFO  SYNC [p2p-worker-3]: <import-status: node = a684f4, hash = d4eed4, number = 484289, txs = 6, result = IMPORTED_BEST, time elapsed = 13 ms>
+18-06-21 18:08:01.763 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352583028908/3352538694070 b-num=484289/484285 b-hash=d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:01.847 DEBUG P2P  [p2p-clear]: average-delay=104ms
+18-06-21 18:08:01.855 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  6]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:01.856 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:02.855 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=52.30.172.164:30303 result=null
+18-06-21 18:08:11.764 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352583028908/3352538694070 b-num=484289/484285 b-hash=d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:11.859 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  6]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352583028908     484289 d4eed4c5a44fbe76a3a60ccec4b48064549e0160c3484aa3b6daee635498b829  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:11.859 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:13.724 INFO  SYNC [p2p-worker-0]: <import-status: node = a684f4, hash = 21e51a, number = 484290, txs = 0, result = IMPORTED_BEST, time elapsed = 5 ms>
+18-06-21 18:08:13.858 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=47.75.110.200:30303 result=null
+18-06-21 18:08:21.765 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352594113966/3352538694070 b-num=484290/484285 b-hash=21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:21.848 DEBUG P2P  [p2p-clear]: average-delay=101ms
+18-06-21 18:08:21.862 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  6]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352594113966     484290 21e51a5e2353589f42191969b08725757d947a1b4f3514a085d1ee7e0f9b8676  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:21.868 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:24.144 INFO  SYNC [p2p-worker-2]: <import-status: node = a684f4, hash = 237186, number = 484291, txs = 4, result = IMPORTED_BEST, time elapsed = 10 ms>
+18-06-21 18:08:24.861 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=185.71.176.43:30303 result=null
+18-06-21 18:08:25.864 DEBUG P2P  [p2p-tcp]: success-connect node-id=0aa3e3 ip=
+18-06-21 18:08:25.864 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=0aa3e3 ip=138.197.149.3
+18-06-21 18:08:25.878 DEBUG P2P  [p2p-in]: outbound -> active node-id=0aa3e3 ip=138.197.149.3
+18-06-21 18:08:28.597 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d10, hash = 21eecb, number = 484292, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:08:28.668 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d10, hash = 597fca, number = 484292, txs = 0, result = IMPORTED_NOT_BEST, time elapsed = 4 ms>
+18-06-21 18:08:31.490 INFO  SYNC [p2p-worker-3]: <import-status: node = 0aa3e3, hash = c9be2b, number = 484293, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:08:31.766 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352627358316/3352538694070 b-num=484293/484285 b-hash=c9be2b6e62d3773c422073c140aaa3aedea56812b9fb9024be7fd4ec76364521/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:31.872 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:d38ee6      3352627358316     484293 c9be2b6e62d3773c422073c140aaa3aedea56812b9fb9024be7fd4ec76364521  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d10 y    3352616278670     484292 21eecbfb164327432e119f1b46732bc5fe58d10d58c012b748f7172e0c130bcf   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352616278670     484292 21eecbfb164327432e119f1b46732bc5fe58d10d58c012b748f7172e0c130bcf   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352616278670     484292 21eecbfb164327432e119f1b46732bc5fe58d10d58c012b748f7172e0c130bcf     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352616278670     484292 597fca9c2b379fe5c0f5482a08748c49bbc22e7cf5d765da9f00316054771241   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:c33d4c y    3352616278670     484292 21eecbfb164327432e119f1b46732bc5fe58d10d58c012b748f7172e0c130bcf 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352616278670     484292 21eecbfb164327432e119f1b46732bc5fe58d10d58c012b748f7172e0c130bcf  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:31.872 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:34.682 INFO  SYNC [p2p-worker-3]: <import-status: node = c33d10, hash = ecb7fe, number = 484294, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:08:36.871 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=68.70.49.181:30303 result=null
+18-06-21 18:08:41.767 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352638443371/3352538694070 b-num=484294/484285 b-hash=ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:41.849 DEBUG P2P  [p2p-clear]: average-delay=130ms
+18-06-21 18:08:41.874 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:41.875 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:47.875 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=76.109.169.222:30303 result=null
+18-06-21 18:08:51.768 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352638443371/3352538694070 b-num=484294/484285 b-hash=ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:08:51.877 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352638443371     484294 ecb7fefa5cd4819f605ebcb6c26a33e50cbf76ec3c2fe92d572533c01bc89a44  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:08:51.878 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:08:53.210 INFO  SYNC [p2p-worker-3]: <import-status: node = 0aa3e3, hash = cb5edd, number = 484295, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:08:58.885 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=23.101.141.31:30303 result=null
+18-06-21 18:09:00.099 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=59.56.110.185:30303 result=No route to host
+18-06-21 18:09:01.394 INFO  SYNC [p2p-worker-0]: <import-status: node = c33d10, hash = 69d77a, number = 484296, txs = 6, result = IMPORTED_BEST, time elapsed = 11 ms>
+18-06-21 18:09:01.769 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352660629720/3352538694070 b-num=484296/484285 b-hash=69d77a7876195d875e63cc7185bfc3e956ad340e51f055d176fba28cdbcc4dce/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:01.849 DEBUG P2P  [p2p-clear]: average-delay=164ms
+18-06-21 18:09:01.881 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352660629720     484296 69d77a7876195d875e63cc7185bfc3e956ad340e51f055d176fba28cdbcc4dce   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:c33d4c y    3352660629720     484296 69d77a7876195d875e63cc7185bfc3e956ad340e51f055d176fba28cdbcc4dce 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:0aa3e3      3352649533838     484295 cb5edd24146e5fc68ee939f88c9d496e1b8c3cf9395a378148b2540fa793f07f   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352649533838     484295 cb5edd24146e5fc68ee939f88c9d496e1b8c3cf9395a378148b2540fa793f07f     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352649533838     484295 cb5edd24146e5fc68ee939f88c9d496e1b8c3cf9395a378148b2540fa793f07f   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352649533838     484295 cb5edd24146e5fc68ee939f88c9d496e1b8c3cf9395a378148b2540fa793f07f  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d30 y    3352649533838     484295 cb5edd24146e5fc68ee939f88c9d496e1b8c3cf9395a378148b2540fa793f07f  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:01.883 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:10.687 INFO  SYNC [p2p-worker-0]: <import-status: node = c33d10, hash = 02551b, number = 484297, txs = 3, result = IMPORTED_BEST, time elapsed = 7 ms>
+18-06-21 18:09:10.748 INFO  SYNC [p2p-worker-1]: <import-status: node = 0aa3e3, hash = 1f6241, number = 484297, txs = 3, result = IMPORTED_NOT_BEST, time elapsed = 7 ms>
+18-06-21 18:09:11.107 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=172.105.232.170:30303 result=null
+18-06-21 18:09:11.770 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352671720185/3352538694070 b-num=484297/484285 b-hash=02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:11.885 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352671720185     484297 02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352671720185     484297 02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352671720185     484297 02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352671720185     484297 02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352671720185     484297 02551b4800876e5ffa0769818ff1e18569adb35cb6e0b4a01383c89735b46398 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:0aa3e3      3352660629720     484296 69d77a7876195d875e63cc7185bfc3e956ad340e51f055d176fba28cdbcc4dce   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:c33d30 y    3352660629720     484296 69d77a7876195d875e63cc7185bfc3e956ad340e51f055d176fba28cdbcc4dce  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:11.886 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:18.447 INFO  SYNC [p2p-worker-0]: <import-status: node = 0aa3e3, hash = c72a34, number = 484298, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:09:21.771 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352682810650/3352538694070 b-num=484298/484285 b-hash=c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:21.850 DEBUG P2P  [p2p-clear]: average-delay=109ms
+18-06-21 18:09:21.887 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352682810650     484298 c72a346249aca501b769f4b03027e573ba9c855cb03afbea9ddc6834762088aa  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:21.888 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:22.118 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=135.0.87.68:30303 result=null
+18-06-21 18:09:28.554 INFO  SYNC [p2p-worker-1]: <import-status: node = c33d10, hash = b79071, number = 484299, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:09:31.772 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352693901115/3352538694070 b-num=484299/484285 b-hash=b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:31.890 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  7]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:c33d22 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:31.890 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:33.128 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=1.165.55.109:30303 result=null
+18-06-21 18:09:34.130 DEBUG P2P  [p2p-tcp]: success-connect node-id=ceca1f ip=
+18-06-21 18:09:34.130 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=ceca1f ip=138.197.130.7
+18-06-21 18:09:34.243 DEBUG P2P  [p2p-in]: outbound -> active node-id=ceca1f ip=138.197.130.7
+18-06-21 18:09:41.772 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352693901115/3352538694070 b-num=484299/484285 b-hash=b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:41.851 DEBUG P2P  [p2p-clear]: average-delay=80ms
+18-06-21 18:09:41.891 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  8]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:41.892 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:45.141 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=100.2.223.177:30303 result=null
+18-06-21 18:09:51.773 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352693901115/3352538694070 b-num=484299/484285 b-hash=b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:09:51.894 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  8]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352693901115     484299 b7907160c572dcc60c79dacc0705ff5de9bbae118c72c2280d8555210b09233e  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:09:51.894 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:09:54.246 INFO  SYNC [p2p-worker-2]: <import-status: node = a684f4, hash = 06e80c, number = 484300, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:09:56.146 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=93.119.224.159:30303 result=null
+18-06-21 18:09:57.376 DEBUG P2P  [p2p-tcp]: success-connect node-id=d67d26 ip=
+18-06-21 18:09:57.377 DEBUG P2P  [p2p-tcp]: prepare-request-handshake -> id=d67d26 ip=47.106.189.175
+18-06-21 18:09:57.612 DEBUG P2P  [p2p-in]: outbound -> active node-id=d67d26 ip=47.106.189.175
+18-06-21 18:10:01.775 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352704991580/3352538694070 b-num=484300/484285 b-hash=06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:01.851 DEBUG P2P  [p2p-clear]: average-delay=139ms
+18-06-21 18:10:01.896 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:01.896 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:08.387 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=66.215.25.196:30303 result=null
+18-06-21 18:10:09.710 INFO  SYNC [p2p-worker-3]: <import-status: node = ceca1f, hash = 7423cd, number = 484301, txs = 4, result = IMPORTED_BEST, time elapsed = 8 ms>
+18-06-21 18:10:11.776 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352716082045/3352538694070 b-num=484301/484285 b-hash=7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:11.897 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:0aa3e3      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:d67d26      3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:c33d30 y    3352704991580     484300 06e80cda7ca76439f772e2c2eb2cb8a55c42dc9a99d028676e3fae7cb3e3a2da  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:11.897 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:19.395 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=82.79.66.147:30303 result=null
+18-06-21 18:10:21.777 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352716082045/3352538694070 b-num=484301/484285 b-hash=7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:21.852 DEBUG P2P  [p2p-clear]: average-delay=87ms
+18-06-21 18:10:21.898 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352716082045     484301 7423cd855afe0669b1d69669f3103f862ba071d8b0e51168fc3be347778b8947  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:21.898 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:25.877 INFO  SYNC [p2p-worker-1]: <import-status: node = a684f4, hash = 615cc3, number = 484302, txs = 4, result = IMPORTED_BEST, time elapsed = 9 ms>
+18-06-21 18:10:30.401 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=125.27.210.4:30303 result=null
+18-06-21 18:10:31.778 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352727161680/3352538694070 b-num=484302/484285 b-hash=615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:31.900 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:31.901 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:40.382 INFO  SYNC [p2p-worker-2]: <import-status: node = c33d30, hash = cad138, number = 484303, txs = 0, result = IMPORTED_BEST, time elapsed = 3 ms>
+18-06-21 18:10:41.409 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=73.250.214.244:30303 result=null
+18-06-21 18:10:41.779 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352738235906/3352538694070 b-num=484303/484285 b-hash=cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:41.853 DEBUG P2P  [p2p-clear]: average-delay=110ms
+18-06-21 18:10:41.902 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d38ee6      3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352738235906     484303 cad138aeed3dfee2000196ee9275afdf54c06a3c7309e5cffecc9b5dd7757bad 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:d67d26      3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:c33d30 y    3352727161680     484302 615cc3c68cf780413d1a44866f24a66e48e0a99dfca4e52bc6528f784276a3f8  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:41.904 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:41.934 INFO  SYNC [p2p-worker-3]: <import-status: node = ceca1f, hash = 9318c1, number = 484304, txs = 6, result = IMPORTED_BEST, time elapsed = 14 ms>
+18-06-21 18:10:51.779 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352749304725/3352538694070 b-num=484304/484285 b-hash=9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:10:51.905 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:10:51.905 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:10:52.414 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=84.90.140.201:30303 result=null
+18-06-21 18:11:01.780 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352749304725/3352538694070 b-num=484304/484285 b-hash=9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:01.853 DEBUG P2P  [p2p-clear]: average-delay=107ms
+18-06-21 18:11:01.907 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:01.907 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:03.418 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=47.94.248.180:40404 result=null
+18-06-21 18:11:11.781 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352749304725/3352538694070 b-num=484304/484285 b-hash=9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:11.908 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352749304725     484304 9318c18aa0d6dbda5a93e7fec30f640658a7776eca1fa9ae87958859ca4e9bc9  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:11.908 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:14.426 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=66.207.217.190:30366 result=null
+18-06-21 18:11:14.548 INFO  SYNC [p2p-worker-0]: <import-status: node = c33d30, hash = efc28d, number = 484305, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:11:21.781 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352760373544/3352538694070 b-num=484305/484285 b-hash=efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:21.854 DEBUG P2P  [p2p-clear]: average-delay=113ms
+18-06-21 18:11:21.910 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:21.910 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:25.437 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=72.214.52.183:30303 result=null
+18-06-21 18:11:31.782 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352760373544/3352538694070 b-num=484305/484285 b-hash=efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:31.912 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:31.912 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:36.439 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=207.97.167.57:30303 result=null
+18-06-21 18:11:39.592 INFO  SYNC [p2p-worker-1]: <import-status: node = 0aa3e3, hash = a675f9, number = 484306, txs = 0, result = IMPORTED_BEST, time elapsed = 2 ms>
+18-06-21 18:11:39.623 INFO  SYNC [p2p-worker-2]: <import-status: node = a684f4, hash = 12ec98, number = 484306, txs = 0, result = IMPORTED_NOT_BEST, time elapsed = 7 ms>
+18-06-21 18:11:41.783 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352771447767/3352538694070 b-num=484306/484285 b-hash=a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:41.854 DEBUG P2P  [p2p-clear]: average-delay=107ms
+18-06-21 18:11:41.914 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:a684f4 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352771447767     484306 12ec987e8f322e11a3c62001608b5992253ccc0eb3bccb7dd67aae49d8c3dfae  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:0aa3e3      3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:c33d30 y    3352760373544     484305 efc28d1ea7e28c95eb4ddfb7d2eca41e507d7f906eb3cb97923f4b8381c9ed51  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:41.914 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:47.447 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=40.121.1.159:30303 result=null
+18-06-21 18:11:51.783 INFO  P2P  [sync-ss]: sync-status avg-import=3.45 b/s td=3352771447767/3352538694070 b-num=484306/484285 b-hash=a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918/a71473bb0c34c7b40215380dbe585e74a1c087be22ad292386affed916dc4703
+18-06-21 18:11:51.916 DEBUG P2P  [p2p-ts]: 
+======================================================================== p2p-status-c5886b =========================================================================
+temp[128] inbound[  0] outbound[  0] active[  9]                                         s - seed node, td - total difficulty, # - block number, bv - binary version
+
+          s               td          #                                                             hash              ip  port     conn              bv           ci
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+id:c33d10 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   13.92.155.115 30303 outbound   0.2.7.93c7da6   1922593709
+id:0aa3e3      3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   138.197.149.3 30303 outbound  0.2.8.ef5df39c    525951004
+id:a684f4 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918     52.60.180.6 30303 outbound   0.2.5.65b2aee    314019042
+id:ceca1f      3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   138.197.130.7 30303 outbound  0.2.8.ef5df39c   1686750934
+id:c33d22 y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918   51.144.42.220 30303 outbound   0.2.7.93c7da6   1540447604
+id:d67d26      3352771447767     484306 12ec987e8f322e11a3c62001608b5992253ccc0eb3bccb7dd67aae49d8c3dfae  47.106.189.175 30303 outbound   0.2.7.1bbeec1   1478581420
+id:d38ee6      3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918  52.165.228.196 30303 outbound   0.2.5.f2acdeb    445635552
+id:c33d4c y    3352771447767     484306 a675f9c39e4ade52d3a3c03fc2c2b9984cfde5a54504ea51b3bf069265f48918 191.232.164.119 30303 outbound   0.2.7.93c7da6   1134618193
+id:c33d30 y    3352771447767     484306 12ec987e8f322e11a3c62001608b5992253ccc0eb3bccb7dd67aae49d8c3dfae  52.231.187.227 30303 outbound  0.2.8.ef5df39c    587437620
+
+18-06-21 18:11:51.916 DEBUG P2P  [p2p-ts]: recv queue[0] send queue[0]
+18-06-21 18:11:56.463 INFO  GEN  [shutdown]: Starting shutdown process...
+18-06-21 18:11:56.464 INFO  GEN  [shutdown]: Shutting down RpcServer
+18-06-21 18:11:56.466 INFO  GEN  [shutdown]: Shutdown RpcServer ... Done!
+18-06-21 18:11:56.467 INFO  GEN  [shutdown]: Shutting down zmq ProtocolProcessor
+18-06-21 18:11:56.468 INFO  API  [shutdown]: zmq-proxy thread shuting down...
+18-06-21 18:11:56.469 INFO  API  [shutdown]: waiting zmq-proxy thread shutdown
+18-06-21 18:11:57.178 INFO  API  [zmq-api]: zmq-proxy thread was interrupted.
+18-06-21 18:11:57.178 INFO  API  [zmq-api]: ProtocolProcessor.run thread finish.
+18-06-21 18:11:57.178 INFO  API  [zmq-api]: Shutting down Sockets...
+18-06-21 18:11:57.179 INFO  API  [pool-7-thread-1]: close callbackRun Sockets...
+18-06-21 18:11:57.181 ERROR API  [pool-7-thread-4]: ProtocolProcessor workerRun exception!! Context was terminated
+18-06-21 18:11:57.182 INFO  API  [pool-7-thread-4]: close workerRun Sockets...
+18-06-21 18:11:57.183 ERROR API  [pool-7-thread-5]: ProtocolProcessor hbRun exception!! Context was terminated
+18-06-21 18:11:57.184 INFO  API  [pool-7-thread-5]: close hbRun Sockets...
+18-06-21 18:11:57.973 INFO  API  [pool-7-thread-3]: close eventRun Sockets...
+18-06-21 18:11:57.974 INFO  API  [zmq-api]: Shutdown Sockets... Done!
+18-06-21 18:11:58.457 DEBUG P2P  [p2p-tcp]: connect-outbound io-exception addr=47.186.45.149:30303 result=null
+18-06-21 18:11:59.469 INFO  GEN  [shutdown]: Shutdown zmq ProtocolProcessor... Done!
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: Shutting down zmq thread
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: Shutdown zmq thread... Done!
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: Shutting down sealer
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: Shutdown sealer... Done!
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: Shutting down the AionHub...
+18-06-21 18:11:59.470 INFO  GEN  [shutdown]: <KERNEL SHUTDOWN SEQUENCE>
+18-06-21 18:11:59.472 INFO  SYNC [shutdown]: Stopping thread: sync-gb
+18-06-21 18:11:59.472 INFO  SYNC [shutdown]: Stopping thread: sync-ib
+18-06-21 18:11:59.473 INFO  SYNC [shutdown]: Stopping thread: sync-gs
+18-06-21 18:11:59.474 INFO  SYNC [sync-gs]: <sync-gs shutdown>
+18-06-21 18:11:59.474 INFO  SYNC [shutdown]: Stopping thread: sync-ss
+18-06-21 18:11:59.474 DEBUG P2P  [sync-ss]: sync-ss shutdown
+18-06-21 18:11:59.474 INFO  GEN  [shutdown]: <shutdown-sync-mgr>
+18-06-21 18:11:59.475 INFO  P2P  [p2p-in]: p2p-pi shutdown
+18-06-21 18:11:59.477 INFO  SYNC [shutdown]: BroadcastTxHandler shutdown!
+18-06-21 18:11:59.481 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=c33d10 ip=13.92.155.115
+18-06-21 18:11:59.481 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=0aa3e3 ip=138.197.149.3
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=a684f4 ip=52.60.180.6
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=ceca1f ip=138.197.130.7
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=c33d22 ip=51.144.42.220
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=d67d26 ip=47.106.189.175
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=d38ee6 ip=52.165.228.196
+18-06-21 18:11:59.482 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=c33d4c ip=191.232.164.119
+18-06-21 18:11:59.487 DEBUG P2P  [shutdown]: close-socket reason=p2p-shutdown active node=c33d30 ip=52.231.187.227
+18-06-21 18:11:59.487 INFO  GEN  [shutdown]: <shutdown-p2p-mgr>
+18-06-21 18:11:59.488 INFO  GEN  [shutdown]: TransactionExecThread shutting down...
+18-06-21 18:11:59.495 INFO  GEN  [shutdown]: TransactionExecThread waiting termination.
+18-06-21 18:11:59.495 INFO  GEN  [shutdown]: TransactionExecThread shutdown... Finished!
+18-06-21 18:11:59.495 INFO  GEN  [shutdown]: <shutdown-tx>
+18-06-21 18:12:01.855 DEBUG P2P  [p2p-clear]: average-delay=0ms
+18-06-21 18:12:03.497 INFO  GEN  [shutdown]: <shutdown-pendingState>
+18-06-21 18:12:03.497 INFO  GEN  [shutdown]: shutting down consensus...
+18-06-21 18:12:03.497 INFO  GEN  [shutdown]: shutdown consensus... Done!
+18-06-21 18:12:03.497 INFO  GEN  [shutdown]: shutting down DB...
+18-06-21 18:12:03.498 INFO  GEN  [shutdown]: Details data source closed.
+18-06-21 18:12:03.500 INFO  GEN  [shutdown]: State database closed.
+18-06-21 18:12:03.502 INFO  GEN  [shutdown]: Transaction database closed.
+18-06-21 18:12:03.503 INFO  GEN  [shutdown]: Block store closed.
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: txPoolDatabase store closed.
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: pendingTxCacheDatabase store closed.
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: shutdown DB... Done!
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: ---------------------------------------------
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: | Aion kernel graceful shutdown successful! |
+18-06-21 18:12:03.504 INFO  GEN  [shutdown]: ---------------------------------------------
