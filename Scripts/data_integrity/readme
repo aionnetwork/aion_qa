@@ -1,0 +1,13 @@
+**virtual environment setup needed**
+
+Libraries to install
+VirtualEnv requirements.txt
+ > pip install -r requirements.txt
+ > pycharm environment setup
+
+Drivers to install;
+Firefox Geckodriver (add to $PATH)
+ > tar -xvzf geckodriver-v0.21.0-linux64.tar.gz 
+ > chmod +x geckodriver
+ > sudo mv geckodriver /usr/local/bin/
+
