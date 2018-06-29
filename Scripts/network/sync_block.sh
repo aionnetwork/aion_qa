@@ -1,20 +1,16 @@
 #!/bin/bash
 
-
 # Please ammend log file path as appropriate
-file=../../../log/aionCurrentLog.dat
-#file=testfile
+#file=../../../log/aionCurrentLog.dat
+file=../testfile
 
 echo 'Which peers sync to blocks:'
 echo
 
-# Check imported best blocks and its incoming peers
-# If imported best: Node / Hash / Number
-
 echo '## ACTIVE NODES ID ##'
+# active node-id=c33d10
 temp=$(egrep -a -o 'active node\-id\=[a-z0-9]{0,6}' $file | cut -d "=" -f2)
 id=($temp)
-# active node-id=c33d10 ip=13.92.155.115
 
 count=$(echo $temp | grep -o ' ' | wc -l)
 ((count++))
@@ -33,9 +29,14 @@ for ((i=0; i<${#id[@]}; ++i)); do
 
     echo $n: ${type[n]}
     block=$(egrep -a -o "node = ${id[i]}.*result = ${type[n]}" $file | rev | cut -d "," -f3 | rev | cut -c 11-)
-    echo $block
+    temp=$(echo $block | rev | cut -d" " -f1-50 | rev)
+    #echo "~Only showing last 50 blocks"
+    echo $temp
 
-    count=$(echo $block | grep -o ' ' | wc -l)
+    count=$(echo $block | grep -o " " | wc -l)
+    if [ ! -z "$block" ]; then 
+      ((count++))
+    fi
     echo "[ total: $count ]"
 
     echo
@@ -44,3 +45,6 @@ for ((i=0; i<${#id[@]}; ++i)); do
   echo
 
 done
+
+# Check imported best blocks and its incoming peers
+# If imported best: Node / Hash / Number
