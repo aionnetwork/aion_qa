@@ -9,48 +9,45 @@ pd.set_option('display.max_columns', 10)
 pd.options.display.float_format = '{:15}'.format
 
 ### PARAMETERS ###
-if len(sys.argv) == 1:
-    numBlocks = 10
-else:
-    numBlocks = int(sys.argv[1])
-
 user = "powerbi"
 pswrd = "rhsmmd7XPPoWCOOY"
 host = "104.215.122.28"
 db = "aionv3"
 
+if len(sys.argv) == 1:
+    numBlocks = 10
+else:
+    numBlocks = int(sys.argv[1])
+
 cnx = sql.connect(user=user, password=pswrd, host=host, database=db)
-result = subprocess.run(['./blocks.sh', str(numBlocks)], stdout=subprocess.PIPE)
 
 ### SYNCED ###
 # Assigning shell outputs
-output = result.stdout.decode('utf-8')
-temp = output.split()
+result = subprocess.run(['./blocks.sh', str(numBlocks)], stdout=subprocess.PIPE)
+output = result.stdout.decode('utf-8').split()
 
 blocks = [0] * numBlocks
 synced = [0] * numBlocks
-count1=count2=count3=0
-for i in temp:
+count1 = count2 = count3 = 0
+for i in output:
     if count1 % 3 == 0:
-        blocks[count2] = temp[count1 + 2]
-        synced[count2] = temp[count1] + " " + temp[count1 + 1]
+        blocks[count2] = output[count1 + 2]
+        synced[count2] = output[count1] + " " + output[count1 + 1]
         count2 = count2 + 1
     count1 = count1 + 1
 blocks.reverse()
 synced.reverse()
-
-### MINED ###
 sBlock = blocks[0]
 eBlock = blocks[-1]
 
+### MINED ###
 query = "real_timestamp, " \
         "block_number"
 
 dfb = pd.read_sql("SELECT " + query + " FROM block WHERE block_number BETWEEN " + str(eBlock) + " AND " + str(sBlock) + " ORDER BY block_number DESC", cnx)
-
-# Formatting timestamps
 mined = dfb["real_timestamp"].values
 chain = dfb["block_number"].values
+
 ts1 = [0] * numBlocks
 ts2 = [0] * numBlocks
 for i in mined:
@@ -62,17 +59,18 @@ for i in mined:
     count3 = count3 + 1
 
 ### OUTPUT ###
-d = {'blocks': blocks, 'synced': synced, 'mined': mined, 'chain': chain, 'ts1': ts1, 'ts2': ts2}
+d = {'blocks': blocks,
+     'synced': synced,
+     'mined': mined,
+     'chain': chain,
+     'ts1': ts1,
+     'ts2': ts2}
 df = pd.DataFrame(data=d).set_index("blocks")
 df["latency"] = df["ts2"] - df["ts1"]
 df = df[["mined", "ts1", "synced", "ts2", "latency"]]
-print(df)
-print("\nAverage Latency (Last", numBlocks, "Blocks):", df["latency"].mean())
+print(df, "\n\nAverage Latency (Last", numBlocks, "Blocks):", df["latency"].mean())
 
 ### EXPORT ###
 last = df["ts2"].max()
-#df.to_csv('block_latency ' + datetime.fromtimestamp(int(last)).strftime('%Y-%m-%d %H:%M:%S') + '.csv')
-
+#df.to_csv('block_latency (last ' + str(numBlocks) + ' blocks) ' + datetime.fromtimestamp(int(last)).strftime('%Y-%m-%d %H:%M:%S') + '.csv')
 cnx.close()
-
-# known issue: import must be synced to latest block
