@@ -1,21 +1,21 @@
 #!/bin/bash
 
 # Please ammend log file path as appropriate
-#file=../../../log/aionCurrentLog.dat
-file=../testfile
+file=../../../log/aionCurrentLog.dat
+#file=../testfile
 
 echo 'Which peers sync to blocks:'
 echo
 
 echo '## ACTIVE NODES ID ##'
 # active node-id=c33d10
-temp=$(egrep -a -o 'active node\-id\=[a-z0-9]{0,6}' $file | cut -d "=" -f2)
+temp=$(egrep -a -o "active node\-id\=[a-z0-9]{0,6}" $file | cut -d"=" -f2)
 id=($temp)
 
 count=$(echo $temp | grep -o ' ' | wc -l)
 ((count++))
-echo 'Nodes:' $temp '['$count']'
-echo
+echo "[ nodes: $count ]"
+echo $temp
 echo
 
 temp='EXIST IMPORTED_BEST NOT_IN_RANGE NO_PARENT'
@@ -28,17 +28,18 @@ for ((i=0; i<${#id[@]}; ++i)); do
   for ((n=0; n<${#type[@]}; ++n)); do
 
     echo $n: ${type[n]}
-    block=$(egrep -a -o "node = ${id[i]}.*result = ${type[n]}" $file | rev | cut -d "," -f3 | rev | cut -c 11-)
-    temp=$(echo $block | rev | cut -d" " -f1-50 | rev)
-    #echo "~Only showing last 50 blocks"
-    echo $temp
-
+    block=$(egrep -a -o "node = ${id[i]}.*result = ${type[n]}" $file | rev | cut -d"," -f3 | rev | cut -c 11-)
     count=$(echo $block | grep -o " " | wc -l)
     if [ ! -z "$block" ]; then 
       ((count++))
     fi
     echo "[ total: $count ]"
 
+    if [ $count -gt 50 ]; then
+      echo "[ Last 50 blocks ]" 
+    fi
+    temp=$(echo $block | rev | cut -d" " -f1-50 | rev)
+    echo $temp
     echo
 
   done

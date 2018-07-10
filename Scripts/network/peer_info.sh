@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#file=../../../log/aionCurrentLog.dat
-file=../testfile
+file=../../../log/aionCurrentLog.dat
+#file=../testfile
 
 echo '1. Active Peers:'
-active=$(egrep -o -a 'active\[.{0,3}\]' $file | tail -1)
+active=$(egrep -o -a "active\[.{0,3}\]" $file | tail -1)
 echo $active
 #./aion.sh | egrep -o -a 'active\[.{0,3}\]'
 
@@ -24,7 +24,7 @@ echo '3. Peer Stats:'
 echo '	     ip: port:	  conn:	     	    bv:'
 # 13.92.155.115 30303 outbound   0.2.7.1bbeec1
 peers=$(echo $active | cut -d"[" -f2 | cut -d"]" -f1)
-egrep -a -o ' *[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{0,3}\.[0-9]{0,3}.*[0-9]{1}\.[0-9]{1}\.[0-9]{1}\.[a-z0-9]{0,10}' $file | tail -n -"$peers"
+egrep -a -o " *[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{0,3}\.[0-9]{0,3}.*[0-9]{1}\.[0-9]{1}\.[0-9]{1}\.[a-z0-9]{0,10}" $file | tail -n -"$peers"
 #./aion.sh | egrep -a -o ' *[0-9]{2,3}\.[0-9]{2,3}\.[0-9]{0,3}\.[0-9]{0,3}.*[0-9]{1}\.[0-9]{1}\.[0-9]{1}\.[a-z0-9]{0,10}'
 
 # Check the detail of the connected peers

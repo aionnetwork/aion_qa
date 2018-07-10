@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#file=../../../log/aionCurrentLog.dat
-file=../testfile
+file=../../../log/aionCurrentLog.dat
+#file=../testfile
 
 #\[sync\-ib\]\:
 #\[p2p\-worker\-[0-9]{1}\]\:
