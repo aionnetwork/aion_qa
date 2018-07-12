@@ -1,0 +1,25 @@
+{
+  "name": "demo-app",
+  "version": "1.0.0",
+  "description": "This repository contains simple smart contract deployment on Aion.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "aionnetwork",
+  "authors": [
+    {
+      "name": "Kimberly Luu",
+      "email": "kim@aion.network",
+      "url": "https://github.com/kimcodeashian"
+    }
+  ],
+  "license": "LGPL-3.0",
+  "devDependencies": {
+    "bignumber.js": "^6.0.0",
+    "readline-sync": "^1.4.9"
+  }
+}
