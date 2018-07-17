@@ -1,7 +1,7 @@
 #!/bin/bash
 
-file=../../../log/aionCurrentLog.dat
-#file=../testfile
+#file=../../../log/aionCurrentLog.dat
+file=../testfile
 
 echo '1. Active Peers:'
 active=$(egrep -o -a "active\[.{0,3}\]" $file | tail -1)

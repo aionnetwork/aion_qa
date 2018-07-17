@@ -14,7 +14,7 @@ numBlocks = 10
 
 user = "powerbi"
 pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
+host = "104.214.73.174"
 db = "aionv3"
 cnx = sql.connect(user=user, password=pswrd, host=host, database=db)
 

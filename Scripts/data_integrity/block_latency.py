@@ -11,7 +11,7 @@ pd.options.display.float_format = '{:15}'.format
 ### PARAMETERS ###
 user = "powerbi"
 pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
+host = "104.214.73.174"
 db = "aionv3"
 
 if len(sys.argv) == 1:

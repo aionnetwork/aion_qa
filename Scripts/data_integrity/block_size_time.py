@@ -11,7 +11,7 @@ view = "mainnet"
 
 user = "powerbi"
 pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
+host = "104.214.73.174"
 
 if view == "mainnet":
     print("\nMainnet Kilimanjaro")
