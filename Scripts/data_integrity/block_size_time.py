@@ -9,9 +9,9 @@ pd.set_option('max_colwidth', 5000)
 view = "mainnet"
 #view = "testnet"
 
-user = "powerbi"
-pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.214.73.174"
+user = ""
+pswrd = ""
+host = ""
 
 if view == "mainnet":
     print("\nMainnet Kilimanjaro")
