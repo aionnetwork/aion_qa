@@ -11,10 +11,10 @@ view = "time"
 numHours = 0.1
 numBlocks = 20
 
-user = "powerbi"
-pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
-db = "aionv3"
+user = ""
+pswrd = ""
+host = ""
+db = ""
 cnx = sql.connect(user=user, password=pswrd, host=host, database=db)
 
 if view == "time":

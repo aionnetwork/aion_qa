@@ -9,10 +9,10 @@ pd.set_option('display.max_columns', 10)
 pd.options.display.float_format = '{:15}'.format
 
 ### PARAMETERS ###
-user = "powerbi"
-pswrd = "rhsmmd7XPPoWCOOY"
-host = "104.215.122.28"
-db = "aionv3"
+user = ""
+pswrd = ""
+host = ""
+db = ""
 
 if len(sys.argv) == 1:
     numBlocks = 10
