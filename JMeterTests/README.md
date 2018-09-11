@@ -1,35 +1,33 @@
-# Web3 Tests
+# JMeter Tests
 
-This repository contains the mocha test files for web3 API.
+This repository contains tests that use JMeter to assess the performance of the API.
 
 ## System Requirements
 
-* **NodeJS** > 8
-* **Bignumber.js library**
-* **Mocha and Chai**
+* [**JMeter**](https://jmeter.apache.org/download_jmeter.cgi) should be in the `JMeterTests` folder
 
 
-## Test Requirements
+## Setup
 
-* Create at least 2 accounts.
-* Ensure the account to be used as main has balance.
-* Modify the `common.js` file to match your configuration by setting the following fields:
-    * `Web3`: _aion-web3_ directory location.
-    * `mainAccount`: address of the account sending all the transactions. 
-    * `mainAccountPass`: password associated with `mainAccount`.
-    * `sleepTime`: time to wait before querying for changes such as transaction receipt and new block generation.
-    * `contractAddress` (optional): several tests work with the _Personnel_ contract. You can deploy the contract only once by running ``test/contracts/PersonnelCompileDeploy.js`` using node.js and copying the address. Alternatively, the contract will be redeployed for each test.
-    * `sendTransactionIteration`, `sendTransactionValue`: number of transactions to send to each account and value of each transaction in _send_multiple_transactions_test_, respectively.
+* Ensure that kernel's config file has rpc-server set to true
+* _(optional)_ Set the RPC thread number in the config file to desired value
+* Start the kernel, connecting to mainnet
+
 ## Running Tests
 
-* Running a single mocha test:
-In a terminal navigate to the `test` folder and run the test using
+* To run the test suite, navigate to the `JMeterTests` folder and run 
 ```
-mocha testName_test.js
+./testScript <RPC_IP_ADDRESS> <RPC_IP_PORT> <output folder>
 ```
-* Running all the mocha tests:
-In a terminal navigate to the `Web3` folder and run the following command:
-    
+The IP address and Port number can be found in the kernel's config file. 
+
+As an example, to run the tests on a kernel that can be accessed at 127.0.0.1:8545, and save the results in a folder called TestResults, run
+
 ```
-mocha --recursive
+./testScript 127.0.0.1 8545 TestResults
 ```
+
+* You can modify the number of threads per test and the number of times each test is run
+by editing these values in the `TestHeader` file
+
+
