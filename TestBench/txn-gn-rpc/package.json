@@ -13,7 +13,7 @@
     "aion-web3": "0.0.3",
     "bignumber.js": "^6.0.0",
     "bn.js": "^4.11.8",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "node-random-number": "^0.1.1"
   }
 }
