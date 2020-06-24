@@ -1,0 +1,25 @@
+#!/bin/bash
+
+shuf -n 5 accounts > randomAccounts
+shuf -n 200 transactions > randomTransactions
+shuf -n 40 blockNumbers > randomBlockNumbers
+
+for i in  `cat randomTransactions` ; do
+  cat GetTxsBody | sed "s/REPLACEME/$i/" ; 
+done > GetTxsBodyReplaced
+
+for i in  `cat randomAccounts` ; do
+  cat GetBalanceBody | sed "s/ACCREPLACEME/$i/" ;
+done > GetBalanceBodyReplacedAccs
+
+for i in  `cat randomBlockNumbers` ; do
+  cat GetBalanceBodyReplacedAccs | sed "s/BLOCKREPLACEME/$i/" ;
+done > GetBalanceBodyReplaced
+
+
+cat GetTxsBodyReplaced GetCoinbaseBody GetBalanceBodyReplaced > TestBody
+cat TestHeader TestBody TestFooter | sed "s/__IPADDRESS__/$1/" | sed "s/__PORT__/$2/" > TestFinal.jmx
+
+apache-jmeter-4.0/bin/jmeter -n -t TestFinal.jmx -l op.jtl -e -o $3
+
+rm randomAccounts op.jtl TestBody TestFinal.jmx GetTxsBodyReplaced GetBalanceBodyReplaced
