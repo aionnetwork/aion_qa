@@ -16,6 +16,6 @@
     "erc-utils": "file:../utils"
   },
   "devDependencies": {
-    "solidity-coverage": "^0.2.2"
+    "solidity-coverage": "^0.8.2"
   }
 }
